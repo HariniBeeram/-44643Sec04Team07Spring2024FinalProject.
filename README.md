@@ -1,4 +1,4 @@
-# -44643Sec04Team07Spring2024FinalProject.
+# 44643Sec04Team07Spring2024FinalProject.
 **Restaurant App**
 
 **Harini Beeram** - Responsible for back end development and to maintain services and databases required for app.And also take holds about implementing user authentication and authorization.
