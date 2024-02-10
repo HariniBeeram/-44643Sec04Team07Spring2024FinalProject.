@@ -12,9 +12,6 @@
 2.	Harini Beeram
 3.	Amogh Reddy Nalla
 
- 
-
-
 SCREEN 1 will be displaying the name of the app and a Lottie animation with a logo and it will redirect to home page after few seconds.
 
 ----------------------------------------------------------------------------------------------------------------------------
@@ -22,7 +19,6 @@ SCREEN 1 will be displaying the name of the app and a Lottie animation with a lo
 Screen 2 shows the home page which is a landing page and allow us to explore the menu where Home is a button. It contains a search option at the top where user can enter few key words to filter out the menu and it is categorized into various cuisines.
 
 ----------------------------------------------------------------------------------------------------------------------
- 
 
 Screen 3 shows the process about reserving a table by clicking on reserve button from the home page. User must select appropriate date from the date box and the preferred time from the time column. After clicking on continue button it will open a layout page to select the desired table 
 
@@ -36,7 +32,6 @@ Screen 5 shows about the order type which customers prefer to order where pickup
 
 -------------------------------------------------------------------------------------------------------------------------
  
-
 Screen 6  shows about the order pick up which needs details such as date and timing about picking up an order. Where continue button helps to confirm and continue the further process.
 
 -------------------------------------------------------------------------------------------------------------------------------
@@ -44,17 +39,22 @@ Screen 6  shows about the order pick up which needs details such as date and tim
 Screen 7  shows the details about the menu with various categories, where each category on clicked will list the various dishes.
 ------------------------------------------------------------------------------------------------------------------------------
  
-
 Screen 8 shows the horizontal scroll about the Menu we choose in the previous screen.
 Which has a various dish option and customize option.
 
+--------------------------------------------------------------------------------------------------------------------------------
 
- 
 Screen 9 will be having a list of order added into the cart and displays the total price to pay and place your order.
 
 --------------------------------------------------------------------------------------------------------------------------------
  
 Screen 10 shows about the chatbot button in the center of buttons which helps customer to know the details and questionnaire about the restaurant.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+Screen 11 says about the account details of the customer. If customer doesn’t login yet he need to signup with the account details to place the order and to reserve the table.
+
+--------------------------------------------------------------------------------------------------------------------------------
 
 ![WhatsApp Image 2024-02-07 at 6 17 12 PM](https://github.com/HariniBeeram/44643Sec04Team07Spring2024FinalProject./assets/142835838/2694476f-3076-4886-8d8b-b6a7e123f426)
 ![WhatsApp Image 2024-02-07 at 6 17 13 PM](https://github.com/HariniBeeram/44643Sec04Team07Spring2024FinalProject./assets/142835838/3b708467-d685-4c4f-aece-39ca1f28911e)
@@ -70,7 +70,6 @@ Screen 10 shows about the chatbot button in the center of buttons which helps cu
 ![WhatsApp Image 2024-02-07 at 7 58 41 PM](https://github.com/HariniBeeram/44643Sec04Team07Spring2024FinalProject./assets/142835838/677ad9b3-0c85-4045-a8f0-e43072b69c55)
 ![WhatsApp Image 2024-02-07 at 8 06 53 PM](https://github.com/HariniBeeram/44643Sec04Team07Spring2024FinalProject./assets/142835838/d80dc996-fd89-4032-9eaf-ecb20af62eb4)
 
-Screen 11 says about the account details of the customer. If customer doesn’t login yet he need to signup with the account details to place the order and to reserve the table.
 
 
 
