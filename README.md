@@ -35,8 +35,9 @@ Screen 5 shows about the order type which customers prefer to order where pickup
 Screen 6  shows about the order pick up which needs details such as date and timing about picking up an order. Where continue button helps to confirm and continue the further process.
 
 -------------------------------------------------------------------------------------------------------------------------------
+
+ Screen 7  shows the details about the menu with various categories, where each category on clicked will list the various dishes.
  
-Screen 7  shows the details about the menu with various categories, where each category on clicked will list the various dishes.
 ------------------------------------------------------------------------------------------------------------------------------
  
 Screen 8 shows the horizontal scroll about the Menu we choose in the previous screen.
