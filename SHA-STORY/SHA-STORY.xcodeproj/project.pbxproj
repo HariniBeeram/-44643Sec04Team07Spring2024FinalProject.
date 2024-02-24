@@ -16,6 +16,7 @@
 		2221F8002B83F4300056A1E2 /* SHA_STORYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221F7FF2B83F4300056A1E2 /* SHA_STORYTests.swift */; };
 		2221F80A2B83F4300056A1E2 /* SHA_STORYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221F8092B83F4300056A1E2 /* SHA_STORYUITests.swift */; };
 		2221F80C2B83F4300056A1E2 /* SHA_STORYUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221F80B2B83F4300056A1E2 /* SHA_STORYUITestsLaunchTests.swift */; };
+		320594F92B87042E00650A92 /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = 320594F82B87042E00650A92 /* AnimatedGradientView */; };
 		C7045F302B884B8B0033D7C7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C7045F2F2B884B8B0033D7C7 /* Lottie */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320594F92B87042E00650A92 /* AnimatedGradientView in Frameworks */,
 				C7045F302B884B8B0033D7C7 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,7 +148,9 @@
 			);
 			name = "SHA-STORY";
 			packageProductDependencies = (
+				320594F82B87042E00650A92 /* AnimatedGradientView */,
 				C7045F2F2B884B8B0033D7C7 /* Lottie */,
+
 			);
 			productName = "SHA-STORY";
 			productReference = 2221F7E52B83F42F0056A1E2 /* SHA-STORY.app */;
@@ -221,6 +225,7 @@
 			);
 			mainGroup = 2221F7DC2B83F42F0056A1E2;
 			packageReferences = (
+				320594F72B87042E00650A92 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */,
 				C7045F2E2B884B8B0033D7C7 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 2221F7E62B83F42F0056A1E2 /* Products */;
@@ -611,6 +616,8 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+
+
 		C7045F2E2B884B8B0033D7C7 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
@@ -618,6 +625,22 @@
 				kind = upToNextMajorVersion;
 				minimumVersion = 4.4.1;
 			};
+		};
+		320594F72B87042E00650A92 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rwbutler/AnimatedGradientView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		320594F82B87042E00650A92 /* AnimatedGradientView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 320594F72B87042E00650A92 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */;
+			productName = AnimatedGradientView;
 		};
 /* End XCRemoteSwiftPackageReference section */
 
