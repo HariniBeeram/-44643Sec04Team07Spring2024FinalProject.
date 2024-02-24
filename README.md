@@ -72,6 +72,8 @@ Screen 11 says about the account details of the customer. If customer doesn’t 
 ![WhatsApp Image 2024-02-07 at 8 06 53 PM](https://github.com/HariniBeeram/44643Sec04Team07Spring2024FinalProject./assets/142835838/d80dc996-fd89-4032-9eaf-ecb20af62eb4)
 
 
+Sprint 03: 
+Created a new IOS app template and Integrated a captivating Lottie animation, We selected a dynamic JSON file and incorporated it into the project structure. A LogIn UI page has been added with actions and outlets created.
 
 
 
