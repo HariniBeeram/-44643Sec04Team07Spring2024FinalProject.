@@ -13,9 +13,6 @@ class SHA_STORY: UIViewController {
     @IBOutlet weak var titleAnimationLBL: UILabel!{
         didSet{
             titleAnimationLBL.text = "SHA Story"
-            titleAnimationLBL.font = UIFont.boldSystemFont(ofSize: 18)
-            titleAnimationLBL.font = UIFont.boldSystemFont(ofSize: 12)
-                                        
         }
     }
     @IBOutlet weak var lottileView: UIView!{
@@ -34,7 +31,7 @@ class SHA_STORY: UIViewController {
     
     @IBOutlet weak var taglineLBL: UILabel!{
         didSet{
-            taglineLBL.text = "Where every style tells a story"
+            taglineLBL.text = "- where every bite tells a story"
         }
     }
     
