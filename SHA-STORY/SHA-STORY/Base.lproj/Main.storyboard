@@ -119,31 +119,37 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Wf-Xx-L5d">
-                                <rect key="frame" x="10" y="69" width="373" height="739"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="oPy-8R-Noj">
-                                        <rect key="frame" x="10" y="10" width="353" height="719"/>
+                                        <rect key="frame" x="10" y="10" width="373" height="832"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5q-9I-1jc" userLabel="titleAnimationLBL">
-                                                <rect key="frame" x="0.0" y="0.0" width="353" height="58.666666666666664"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                <color key="textColor" systemColor="systemYellowColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titleLBL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5q-9I-1jc" userLabel="titleAnimationLBL">
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="133"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                                <color key="textColor" cyan="0.31181708916083917" magenta="0.95686735139860135" yellow="0.087685751748251745" black="0.17890624999999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Gj-ph-KdY">
+                                                <rect key="frame" x="0.0" y="141" width="373" height="18"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="taglineLBL">
+                                                        <attributes>
+                                                            <color key="NSColor" cyan="0.31939974427223206" magenta="0.55722792832167833" yellow="0.33675819635391235" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                            <font key="NSFont" size="16" name="TimesNewRomanPS-ItalicMT"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1sF-7n-AYt" userLabel="LaunchLAV" customClass="LottieAnimationView" customModule="Lottie">
-                                                <rect key="frame" x="0.0" y="66.666666666666686" width="353" height="585.66666666666652"/>
+                                                <rect key="frame" x="0.0" y="167" width="373" height="665"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="taglineLBL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Gj-ph-KdY">
-                                                <rect key="frame" x="0.0" y="660.33333333333337" width="353" height="58.666666666666629"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" systemColor="systemPinkColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="m5q-9I-1jc" firstAttribute="height" secondItem="1sF-7n-AYt" secondAttribute="height" multiplier="0.1" id="59k-k0-AeG"/>
-                                            <constraint firstItem="8Gj-ph-KdY" firstAttribute="height" secondItem="1sF-7n-AYt" secondAttribute="height" multiplier="0.1" id="XOU-hN-s1O"/>
+                                            <constraint firstItem="m5q-9I-1jc" firstAttribute="height" secondItem="1sF-7n-AYt" secondAttribute="height" multiplier="0.2" id="Oz7-IS-fRx"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -159,14 +165,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Wf-Xx-L5d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="0zY-jT-VPG"/>
+                            <constraint firstItem="6Wf-Xx-L5d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0zY-jT-VPG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f0j-n0-ddp" secondAttribute="trailing" constant="20" id="HaE-Yd-QXR"/>
                             <constraint firstItem="f0j-n0-ddp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Lfc-wR-H83"/>
-                            <constraint firstItem="6Wf-Xx-L5d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="YFN-Gd-EqM"/>
+                            <constraint firstItem="6Wf-Xx-L5d" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YFN-Gd-EqM"/>
                             <constraint firstItem="f0j-n0-ddp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="YPd-Jb-hX7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f0j-n0-ddp" secondAttribute="bottom" constant="20" id="aRI-j9-Vu1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6Wf-Xx-L5d" secondAttribute="bottom" constant="10" id="uNI-ny-VuW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Wf-Xx-L5d" secondAttribute="trailing" constant="10" id="v13-bE-Gqi"/>
+                            <constraint firstAttribute="bottom" secondItem="6Wf-Xx-L5d" secondAttribute="bottom" id="uNI-ny-VuW"/>
+                            <constraint firstAttribute="trailing" secondItem="6Wf-Xx-L5d" secondAttribute="trailing" id="v13-bE-Gqi"/>
                         </constraints>
                     </view>
                     <connections>
@@ -184,12 +190,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
