@@ -33,6 +33,7 @@ class SHA_STORY: UIViewController {
     @IBOutlet weak var lottileView: UIView!{
         didSet{
             LaunchLAV.animation = .named("cheflogo")
+            lottileView.alpha = 1
             LaunchLAV.alpha=1
             LaunchLAV.play(){[weak self] _ in
                 UIViewPropertyAnimator.runningPropertyAnimator(withDuration:1, delay: 0.1, options: [.curveEaseIn]){
