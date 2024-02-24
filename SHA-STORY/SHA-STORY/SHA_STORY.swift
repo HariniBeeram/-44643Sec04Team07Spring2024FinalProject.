@@ -10,6 +10,21 @@ import Lottie
 
 class SHA_STORY: UIViewController {
     
+    
+    @IBOutlet weak var Username: UILabel!
+    
+    
+    @IBOutlet weak var UsernameTF: UITextField!
+    
+    
+    @IBOutlet weak var Password: UILabel!
+    
+    
+    @IBOutlet weak var PasswordTF: UITextField!
+    
+    
+    @IBOutlet weak var Login: UIButton!
+    
     @IBOutlet weak var titleAnimationLBL: UILabel!{
         didSet{
             titleAnimationLBL.text = "SHA Story"
@@ -44,6 +59,10 @@ class SHA_STORY: UIViewController {
         super.viewDidLoad()
         //Testing branch
         // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func LoginAction(_ sender: UIButton) {
     }
     
 }

@@ -76,6 +76,9 @@
                                         <rect key="frame" x="0.0" y="415.33333333333331" width="353" height="96"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="LOG IN"/>
+                                        <connections>
+                                            <action selector="LoginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6JM-4c-b8O"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWb-2P-71t">
                                         <rect key="frame" x="0.0" y="519.33333333333337" width="353" height="95.666666666666629"/>
@@ -177,6 +180,11 @@
                     </view>
                     <connections>
                         <outlet property="LaunchLAV" destination="1sF-7n-AYt" id="CTh-Bw-6DR"/>
+                        <outlet property="Login" destination="cbf-08-k2e" id="3Gk-iU-DZh"/>
+                        <outlet property="Password" destination="8Fn-i4-Nzd" id="NOb-AP-kzB"/>
+                        <outlet property="PasswordTF" destination="QFg-fb-IKt" id="6FZ-6c-yNv"/>
+                        <outlet property="Username" destination="Hvo-cZ-FQd" id="sW9-AH-6gN"/>
+                        <outlet property="UsernameTF" destination="Ugn-NU-1eT" id="o3B-2L-qE1"/>
                         <outlet property="lottileView" destination="6Wf-Xx-L5d" id="L69-dp-AvD"/>
                         <outlet property="taglineLBL" destination="8Gj-ph-KdY" id="Eoa-lr-W1K"/>
                         <outlet property="titleAnimationLBL" destination="m5q-9I-1jc" id="8nG-I6-79F"/>
