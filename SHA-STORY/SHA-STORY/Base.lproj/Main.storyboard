@@ -175,8 +175,96 @@
             </objects>
             <point key="canvasLocation" x="0.76335877862595414" y="3.5211267605633805"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="3JA-rd-cQN">
+            <objects>
+                <viewController id="lL4-Br-OBd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tff-Kk-nlz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LqO-ao-a5B">
+                                <rect key="frame" x="16" y="69" width="354" height="683.33333333333337"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="EXPLORE MENU 🔖" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eWs-pj-f6B">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="68.333333333333329"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="831-ah-xJK">
+                                        <rect key="frame" x="0.0" y="68.333333333333343" width="354" height="68.333333333333343"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="lL4-Br-OBd" id="pWX-nh-BHc"/>
+                                        </connections>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsg-gX-8UP">
+                                        <rect key="frame" x="0.0" y="136.66666666666666" width="354" height="68.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fp8-Ul-IIm">
+                                        <rect key="frame" x="0.0" y="205" width="354" height="68.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBd-8H-QFJ">
+                                        <rect key="frame" x="0.0" y="273.33333333333331" width="354" height="68.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4P-H8-yxs">
+                                        <rect key="frame" x="0.0" y="341.66666666666669" width="354" height="68.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27k-WA-cEi">
+                                        <rect key="frame" x="0.0" y="410" width="354" height="68.333333333333314"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y51-Jp-uaw">
+                                        <rect key="frame" x="0.0" y="478.33333333333331" width="354" height="68.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCL-Vi-A2w">
+                                        <rect key="frame" x="0.0" y="546.66666666666663" width="354" height="68.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JV7-FK-dZP">
+                                        <rect key="frame" x="0.0" y="615" width="354" height="68.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3rD-T9-VSI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LqO-ao-a5B" firstAttribute="height" secondItem="3rD-T9-VSI" secondAttribute="height" multiplier="0.9" id="MAN-g4-x2r"/>
+                            <constraint firstItem="LqO-ao-a5B" firstAttribute="leading" secondItem="3rD-T9-VSI" secondAttribute="leading" constant="16" id="PWv-9c-lOK"/>
+                            <constraint firstItem="LqO-ao-a5B" firstAttribute="bottom" secondItem="3rD-T9-VSI" secondAttribute="bottom" constant="10" id="RRV-2y-JVI"/>
+                            <constraint firstItem="LqO-ao-a5B" firstAttribute="top" secondItem="3rD-T9-VSI" secondAttribute="top" constant="10" id="qJa-Ti-2Jg"/>
+                            <constraint firstItem="LqO-ao-a5B" firstAttribute="width" secondItem="3rD-T9-VSI" secondAttribute="width" multiplier="0.9" id="uGM-vQ-zjZ"/>
+                            <constraint firstItem="3rD-T9-VSI" firstAttribute="trailing" secondItem="LqO-ao-a5B" secondAttribute="trailing" constant="23.333333333333314" id="xIJ-ks-eGZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nuX-ja-qLW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-411.4503816793893" y="-673.23943661971839"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
