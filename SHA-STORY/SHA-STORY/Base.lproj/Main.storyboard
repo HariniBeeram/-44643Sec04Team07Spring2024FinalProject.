@@ -196,7 +196,7 @@
                         <viewLayoutGuide key="safeArea" id="3rD-T9-VSI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="HpP-hM-hvK"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="HpP-hM-hvK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nuX-ja-qLW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -207,9 +207,11 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vqv-oq-TWe" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SG4-gD-c7u">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" shadowImage="dog.png" id="SG4-gD-c7u">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="standardAppearance"/>
                     </tabBar>
                     <connections>
                         <segue destination="lL4-Br-OBd" kind="relationship" relationship="viewControllers" id="z3U-uT-dzi"/>
@@ -233,7 +235,7 @@
                         <viewLayoutGuide key="safeArea" id="o4J-sd-80p"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="C1N-90-riU"/>
+                    <tabBarItem key="tabBarItem" title="Reserve" image="chair.lounge" catalog="system" id="C1N-90-riU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TdB-vG-gKp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -249,7 +251,7 @@
                         <viewLayoutGuide key="safeArea" id="UbW-m6-6rR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="KAn-Db-OtO"/>
+                    <tabBarItem key="tabBarItem" title="Chat" image="ellipsis.message.fill" catalog="system" id="KAn-Db-OtO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iKm-9w-hmy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -265,7 +267,7 @@
                         <viewLayoutGuide key="safeArea" id="NdQ-U1-qH2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="wsv-dC-V3K"/>
+                    <tabBarItem key="tabBarItem" title="Orders" image="cart.fill" catalog="system" id="wsv-dC-V3K"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uBf-G4-yaB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -281,7 +283,7 @@
                         <viewLayoutGuide key="safeArea" id="WhC-P8-8Pc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="qIR-Uc-D4X"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="person.crop.circle.fill" catalog="system" id="qIR-Uc-D4X"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IeW-VJ-brx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -289,6 +291,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
+        <image name="chair.lounge" catalog="system" width="128" height="103"/>
+        <image name="dog.png" width="447" height="479"/>
+        <image name="ellipsis.message.fill" catalog="system" width="128" height="114"/>
+        <image name="homekit" catalog="system" width="128" height="104"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
