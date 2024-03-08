@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C1C97292B9AAFCF0089F466 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1C97282B9AAFCF0089F466 /* RegistrationViewController.swift */; };
 		2221F7E92B83F42F0056A1E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221F7E82B83F42F0056A1E2 /* AppDelegate.swift */; };
 		2221F7EB2B83F42F0056A1E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221F7EA2B83F42F0056A1E2 /* SceneDelegate.swift */; };
 		2221F7ED2B83F42F0056A1E2 /* SHA_STORY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221F7EC2B83F42F0056A1E2 /* SHA_STORY.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C1C97282B9AAFCF0089F466 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = SOURCE_ROOT; };
 		2221F7E52B83F42F0056A1E2 /* SHA-STORY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SHA-STORY.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2221F7E82B83F42F0056A1E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2221F7EA2B83F42F0056A1E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				2221F7EA2B83F42F0056A1E2 /* SceneDelegate.swift */,
 				2221F7EC2B83F42F0056A1E2 /* SHA_STORY.swift */,
 				2221F7EE2B83F42F0056A1E2 /* Main.storyboard */,
+				0C1C97282B9AAFCF0089F466 /* RegistrationViewController.swift */,
 				2221F7F12B83F4300056A1E2 /* Assets.xcassets */,
 				2221F7F32B83F4300056A1E2 /* LaunchScreen.storyboard */,
 				2221F7F62B83F4300056A1E2 /* Info.plist */,
@@ -150,7 +153,6 @@
 			packageProductDependencies = (
 				320594F82B87042E00650A92 /* AnimatedGradientView */,
 				C7045F2F2B884B8B0033D7C7 /* Lottie */,
-
 			);
 			productName = "SHA-STORY";
 			productReference = 2221F7E52B83F42F0056A1E2 /* SHA-STORY.app */;
@@ -273,6 +275,7 @@
 			files = (
 				2221F7ED2B83F42F0056A1E2 /* SHA_STORY.swift in Sources */,
 				2221F7E92B83F42F0056A1E2 /* AppDelegate.swift in Sources */,
+				0C1C97292B9AAFCF0089F466 /* RegistrationViewController.swift in Sources */,
 				2221F7EB2B83F42F0056A1E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,22 +619,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-
-
-		C7045F2E2B884B8B0033D7C7 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.4.1;
-			};
-		};
 		320594F72B87042E00650A92 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/rwbutler/AnimatedGradientView.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 3.1.1;
+			};
+		};
+		C7045F2E2B884B8B0033D7C7 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -642,9 +643,6 @@
 			package = 320594F72B87042E00650A92 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */;
 			productName = AnimatedGradientView;
 		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
 		C7045F2F2B884B8B0033D7C7 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C7045F2E2B884B8B0033D7C7 /* XCRemoteSwiftPackageReference "lottie-ios" */;
