@@ -17,6 +17,10 @@
 		2221F80A2B83F4300056A1E2 /* SHA_STORYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221F8092B83F4300056A1E2 /* SHA_STORYUITests.swift */; };
 		2221F80C2B83F4300056A1E2 /* SHA_STORYUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221F80B2B83F4300056A1E2 /* SHA_STORYUITestsLaunchTests.swift */; };
 		320594F92B87042E00650A92 /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = 320594F82B87042E00650A92 /* AnimatedGradientView */; };
+		32C006B42B9BC6680037AD31 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 32C006B32B9BC6680037AD31 /* FirebaseAuth */; };
+		32C006B62B9BC6C30037AD31 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 32C006B52B9BC6C30037AD31 /* FirebaseAnalytics */; };
+		32C006B82B9BC6C30037AD31 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 32C006B72B9BC6C30037AD31 /* FirebaseDatabase */; };
+		32C006BD2B9BCB3A0037AD31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32C006BC2B9BCB3A0037AD31 /* GoogleService-Info.plist */; };
 		C7045F302B884B8B0033D7C7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C7045F2F2B884B8B0033D7C7 /* Lottie */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +55,7 @@
 		2221F8052B83F4300056A1E2 /* SHA-STORYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SHA-STORYUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2221F8092B83F4300056A1E2 /* SHA_STORYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA_STORYUITests.swift; sourceTree = "<group>"; };
 		2221F80B2B83F4300056A1E2 /* SHA_STORYUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA_STORYUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		32C006BC2B9BCB3A0037AD31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32C006B82B9BC6C30037AD31 /* FirebaseDatabase in Frameworks */,
 				320594F92B87042E00650A92 /* AnimatedGradientView in Frameworks */,
+				32C006B42B9BC6680037AD31 /* FirebaseAuth in Frameworks */,
+				32C006B62B9BC6C30037AD31 /* FirebaseAnalytics in Frameworks */,
 				C7045F302B884B8B0033D7C7 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +95,7 @@
 				2221F7FE2B83F4300056A1E2 /* SHA-STORYTests */,
 				2221F8082B83F4300056A1E2 /* SHA-STORYUITests */,
 				2221F7E62B83F42F0056A1E2 /* Products */,
+				32C006B22B9BC6680037AD31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,8 +112,7 @@
 		2221F7E72B83F42F0056A1E2 /* SHA-STORY */ = {
 			isa = PBXGroup;
 			children = (
-				2221F7E82B83F42F0056A1E2 /* AppDelegate.swift */,
-				2221F7EA2B83F42F0056A1E2 /* SceneDelegate.swift */,
+				32C006B92B9BC7A10037AD31 /* SupportingFiles */,
 				2221F7EC2B83F42F0056A1E2 /* SHA_STORY.swift */,
 				2221F7EE2B83F42F0056A1E2 /* Main.storyboard */,
 				2221F7F12B83F4300056A1E2 /* Assets.xcassets */,
@@ -131,6 +139,23 @@
 			path = "SHA-STORYUITests";
 			sourceTree = "<group>";
 		};
+		32C006B22B9BC6680037AD31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32C006B92B9BC7A10037AD31 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2221F7E82B83F42F0056A1E2 /* AppDelegate.swift */,
+				2221F7EA2B83F42F0056A1E2 /* SceneDelegate.swift */,
+				32C006BC2B9BCB3A0037AD31 /* GoogleService-Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,7 +175,9 @@
 			packageProductDependencies = (
 				320594F82B87042E00650A92 /* AnimatedGradientView */,
 				C7045F2F2B884B8B0033D7C7 /* Lottie */,
-
+				32C006B32B9BC6680037AD31 /* FirebaseAuth */,
+				32C006B52B9BC6C30037AD31 /* FirebaseAnalytics */,
+				32C006B72B9BC6C30037AD31 /* FirebaseDatabase */,
 			);
 			productName = "SHA-STORY";
 			productReference = 2221F7E52B83F42F0056A1E2 /* SHA-STORY.app */;
@@ -227,6 +254,7 @@
 			packageReferences = (
 				320594F72B87042E00650A92 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */,
 				C7045F2E2B884B8B0033D7C7 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				32C006B12B9BC4FF0037AD31 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 2221F7E62B83F42F0056A1E2 /* Products */;
 			projectDirPath = "";
@@ -245,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2221F7F52B83F4300056A1E2 /* LaunchScreen.storyboard in Resources */,
+				32C006BD2B9BCB3A0037AD31 /* GoogleService-Info.plist in Resources */,
 				2221F7F22B83F4300056A1E2 /* Assets.xcassets in Resources */,
 				2221F7F02B83F42F0056A1E2 /* Main.storyboard in Resources */,
 			);
@@ -616,22 +645,28 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-
-
-		C7045F2E2B884B8B0033D7C7 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.4.1;
-			};
-		};
 		320594F72B87042E00650A92 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/rwbutler/AnimatedGradientView.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 3.1.1;
+			};
+		};
+		32C006B12B9BC4FF0037AD31 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.22.1;
+			};
+		};
+		C7045F2E2B884B8B0033D7C7 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -642,9 +677,21 @@
 			package = 320594F72B87042E00650A92 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */;
 			productName = AnimatedGradientView;
 		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
+		32C006B32B9BC6680037AD31 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32C006B12B9BC4FF0037AD31 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		32C006B52B9BC6C30037AD31 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32C006B12B9BC4FF0037AD31 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		32C006B72B9BC6C30037AD31 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32C006B12B9BC4FF0037AD31 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
 		C7045F2F2B884B8B0033D7C7 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C7045F2E2B884B8B0033D7C7 /* XCRemoteSwiftPackageReference "lottie-ios" */;
