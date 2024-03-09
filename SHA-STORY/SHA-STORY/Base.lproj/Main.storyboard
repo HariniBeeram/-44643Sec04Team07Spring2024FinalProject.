@@ -209,6 +209,9 @@
                                                 <rect key="frame" x="0.0" y="68.333333333333314" width="353" height="60.333333333333343"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="userName:" destination="tQk-zD-Rwl" eventType="editingDidEndOnExit" id="2zy-IH-BEf"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -225,6 +228,9 @@
                                                 <rect key="frame" x="0.0" y="68.333333333333371" width="353" height="60"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="password:" destination="tQk-zD-Rwl" eventType="editingDidEndOnExit" id="lf6-gJ-LXA"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -246,8 +252,14 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBq-aR-6w3">
                                         <rect key="frame" x="0.0" y="546.33333333333337" width="353" height="128.66666666666663"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="253" id="dWR-ad-vqx"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Create Account"/>
+                                        <connections>
+                                            <action selector="SignupBTN:" destination="tQk-zD-Rwl" eventType="touchUpInside" id="B8m-VR-daQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -268,6 +280,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="o9C-fc-Kt7"/>
+                    <connections>
+                        <outlet property="ConfirmPasswordTF" destination="kgp-6W-fOU" id="DC5-Ty-4vu"/>
+                        <outlet property="PasswordTF" destination="Gc4-yD-KDs" id="Ygw-dV-ZOn"/>
+                        <outlet property="UsernameTF" destination="pHa-aS-lsc" id="9gs-Bf-Ovl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="00s-6F-Wlx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
