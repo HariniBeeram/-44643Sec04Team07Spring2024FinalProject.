@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "110DF79A-109F-4B26-A9CE-4A1D4CAB71BB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7B6A40F6-F3B5-4B3E-AEFA-AF4F6FD84A63"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SHA-STORY/SHA_STORY.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "taglineLBL"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "7B6A40F6-F3B5-4B3E-AEFA-AF4F6FD84A63 - 574db8d995dd7332"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SHA_STORY.SHA_STORY.taglineLBL.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ios1/Documents/amogh/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/SHA_STORY.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "7B6A40F6-F3B5-4B3E-AEFA-AF4F6FD84A63 - 4f158b946eca8f9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SHA_STORY.SHA_STORY.taglineLBL.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ios1/Documents/amogh/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/SHA_STORY.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "7B6A40F6-F3B5-4B3E-AEFA-AF4F6FD84A63 - aaeb11b25f0e99c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SHA_STORY.SHA_STORY.taglineLBL.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ios1/Documents/amogh/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/SHA_STORY.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "7B6A40F6-F3B5-4B3E-AEFA-AF4F6FD84A63 - 1c3e4c1078bbbeb8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SHA_STORY.SHA_STORY.taglineLBL.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ios1/Documents/amogh/44643Sec04Team07Spring2024FinalProject./SHA-STORY/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "7B6A40F6-F3B5-4B3E-AEFA-AF4F6FD84A63 - 3ef171c4b3146c8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SHA_STORY.SHA_STORY.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SHA_STORY.SHA_STORY"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ios1/Documents/amogh/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/SHA_STORY.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "396">
+               </Location>
+               <Location
+                  uuid = "7B6A40F6-F3B5-4B3E-AEFA-AF4F6FD84A63 - 8bd74bbfa32b608e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SHA_STORY.SHA_STORY.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SHA_STORY.SHA_STORY&gt;"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ios1/Documents/amogh/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/SHA_STORY.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "372">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
