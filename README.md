@@ -75,6 +75,9 @@ Screen 11 says about the account details of the customer. If customer doesn’t 
 Sprint 03: 
 Created a new IOS app template and Integrated a captivating Lottie animation, We selected a dynamic JSON file and incorporated it into the project structure. A LogIn UI page has been added with actions and outlets created.
 
+Sprinr 04:
+Created a Tap bar controller with 5 screens home, reserve, chat, Orders and account. Added a bit of UI to Home and Reserve screen. Navigation has been created for create new account button in the login page . Also Ui is added to the registration page.
+
 
 
 
