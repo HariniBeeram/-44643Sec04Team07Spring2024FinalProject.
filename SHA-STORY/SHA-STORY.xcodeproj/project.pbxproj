@@ -24,6 +24,7 @@
 		32C006BD2B9BCB3A0037AD31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32C006BC2B9BCB3A0037AD31 /* GoogleService-Info.plist */; };
 		32C006C12B9C02F20037AD31 /* ReserveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C006C02B9C02F20037AD31 /* ReserveVC.swift */; };
 		32DDD7262BB51EBD00827EAA /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = 32DDD7252BB51EBD00827EAA /* Eureka */; };
+		32DDD7282BB520B300827EAA /* ReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDD7272BB520B300827EAA /* ReserveViewController.swift */; };
 		C7045F302B884B8B0033D7C7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C7045F2F2B884B8B0033D7C7 /* Lottie */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		2221F80B2B83F4300056A1E2 /* SHA_STORYUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA_STORYUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		32C006BC2B9BCB3A0037AD31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		32C006C02B9C02F20037AD31 /* ReserveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveVC.swift; sourceTree = "<group>"; };
+		32DDD7272BB520B300827EAA /* ReserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				2221F7EC2B83F42F0056A1E2 /* SHA_STORY.swift */,
 				2221F7EE2B83F42F0056A1E2 /* Main.storyboard */,
 				0C1C97282B9AAFCF0089F466 /* RegistrationViewController.swift */,
+				32DDD7272BB520B300827EAA /* ReserveViewController.swift */,
 				2221F7F12B83F4300056A1E2 /* Assets.xcassets */,
 				2221F7F32B83F4300056A1E2 /* LaunchScreen.storyboard */,
 				2221F7F62B83F4300056A1E2 /* Info.plist */,
@@ -315,6 +318,7 @@
 				0C1C97292B9AAFCF0089F466 /* RegistrationViewController.swift in Sources */,
 				2221F7EB2B83F42F0056A1E2 /* SceneDelegate.swift in Sources */,
 				32C006C12B9C02F20037AD31 /* ReserveVC.swift in Sources */,
+				32DDD7282BB520B300827EAA /* ReserveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
