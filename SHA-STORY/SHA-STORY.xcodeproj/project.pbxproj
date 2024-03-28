@@ -23,6 +23,7 @@
 		32C006B82B9BC6C30037AD31 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 32C006B72B9BC6C30037AD31 /* FirebaseDatabase */; };
 		32C006BD2B9BCB3A0037AD31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32C006BC2B9BCB3A0037AD31 /* GoogleService-Info.plist */; };
 		32C006C12B9C02F20037AD31 /* ReserveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C006C02B9C02F20037AD31 /* ReserveVC.swift */; };
+		32DDD7262BB51EBD00827EAA /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = 32DDD7252BB51EBD00827EAA /* Eureka */; };
 		C7045F302B884B8B0033D7C7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C7045F2F2B884B8B0033D7C7 /* Lottie */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 				32C006B42B9BC6680037AD31 /* FirebaseAuth in Frameworks */,
 				32C006B62B9BC6C30037AD31 /* FirebaseAnalytics in Frameworks */,
 				C7045F302B884B8B0033D7C7 /* Lottie in Frameworks */,
+				32DDD7262BB51EBD00827EAA /* Eureka in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +186,7 @@
 				32C006B32B9BC6680037AD31 /* FirebaseAuth */,
 				32C006B52B9BC6C30037AD31 /* FirebaseAnalytics */,
 				32C006B72B9BC6C30037AD31 /* FirebaseDatabase */,
+				32DDD7252BB51EBD00827EAA /* Eureka */,
 			);
 			productName = "SHA-STORY";
 			productReference = 2221F7E52B83F42F0056A1E2 /* SHA-STORY.app */;
@@ -261,6 +264,7 @@
 				320594F72B87042E00650A92 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */,
 				C7045F2E2B884B8B0033D7C7 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				32C006B12B9BC4FF0037AD31 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				32DDD7242BB51EBD00827EAA /* XCRemoteSwiftPackageReference "Eureka" */,
 			);
 			productRefGroup = 2221F7E62B83F42F0056A1E2 /* Products */;
 			projectDirPath = "";
@@ -669,6 +673,14 @@
 				minimumVersion = 10.22.1;
 			};
 		};
+		32DDD7242BB51EBD00827EAA /* XCRemoteSwiftPackageReference "Eureka" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xmartlabs/Eureka.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
 		C7045F2E2B884B8B0033D7C7 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
@@ -699,6 +711,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 32C006B12B9BC4FF0037AD31 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
+		};
+		32DDD7252BB51EBD00827EAA /* Eureka */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32DDD7242BB51EBD00827EAA /* XCRemoteSwiftPackageReference "Eureka" */;
+			productName = Eureka;
 		};
 		C7045F2F2B884B8B0033D7C7 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
