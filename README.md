@@ -78,6 +78,8 @@ Created a new IOS app template and Integrated a captivating Lottie animation, We
 Sprinr 04:
 Created a Tap bar controller with 5 screens home, reserve, chat, Orders and account. Added a bit of UI to Home and Reserve screen. Navigation has been created for create new account button in the login page . Also Ui is added to the registration page.
 
+Sprint 05:
+Developed order screen Ui. Created two navigation controllers for pickup and delivery in the order UI. Developed Reserve UI where three sections are added to select date, time and no of people required to reserve the tables. Added Eureka package to utilize in reserve UI.
 
 
 
