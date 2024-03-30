@@ -418,9 +418,66 @@
                                     <segue destination="smu-md-9Vn" kind="show" identifier="pickup" id="IJm-TM-GvX"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iqL-7Y-JbG" userLabel="BigContainerSV">
+                                <rect key="frame" x="10" y="69" width="373" height="690"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiF-up-T4g">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="224.66666666666666"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Order Type">
+                                                <attributes>
+                                                    <color key="NSColor" cyan="0.31181708920000001" magenta="0.95686735140000001" yellow="0.26611669580000002" black="0.0034514546859999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                    <font key="NSFont" metaFont="system" size="38"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="highlightedColor" cyan="0.31181708920000001" magenta="0.95686735140000001" yellow="0.26611669580000002" black="0.0034514546859999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JS6-3U-h6U" userLabel="DeliverySV">
+                                        <rect key="frame" x="0.0" y="232.66666666666669" width="373" height="224.66666666666669"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food-delivery" translatesAutoresizingMaskIntoConstraints="NO" id="dnq-Vp-bhP">
+                                                <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="224.66666666666666"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKV-vr-mS8">
+                                                <rect key="frame" x="190.66666666666663" y="95.333333333333314" width="182.33333333333337" height="34.333333333333343"/>
+                                                <color key="tintColor" cyan="0.31181708920000001" magenta="0.95686735140000001" yellow="0.26611669580000002" black="0.0034514546859999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Delivery"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Las-hR-fS3" userLabel="PickUpSV">
+                                        <rect key="frame" x="0.0" y="465.33333333333343" width="373" height="224.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V75-N6-Cl9">
+                                                <rect key="frame" x="0.0" y="95.333333333333258" width="182.66666666666666" height="34.333333333333343"/>
+                                                <color key="tintColor" cyan="0.31181708920000001" magenta="0.95686735140000001" yellow="0.26611669580000002" black="0.0034514546859999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="pickup"/>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food-pickup" translatesAutoresizingMaskIntoConstraints="NO" id="K7h-kO-tlL">
+                                                <rect key="frame" x="190.66666666666663" y="0.0" width="182.33333333333337" height="224.66666666666666"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="JS6-3U-h6U" firstAttribute="height" secondItem="iqL-7Y-JbG" secondAttribute="height" multiplier="0.4" id="5Gb-6t-HaA"/>
+                                    <constraint firstItem="tiF-up-T4g" firstAttribute="height" secondItem="iqL-7Y-JbG" secondAttribute="height" multiplier="0.2" id="Cfm-Yb-fPd"/>
+                                    <constraint firstItem="Las-hR-fS3" firstAttribute="height" secondItem="iqL-7Y-JbG" secondAttribute="height" multiplier="0.4" id="NQd-6D-tTr"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NdQ-U1-qH2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NdQ-U1-qH2" firstAttribute="bottom" secondItem="iqL-7Y-JbG" secondAttribute="bottom" constant="10" id="AsM-UN-ws3"/>
+                            <constraint firstItem="iqL-7Y-JbG" firstAttribute="top" secondItem="NdQ-U1-qH2" secondAttribute="top" constant="10" id="UxF-Aa-S3f"/>
+                            <constraint firstItem="iqL-7Y-JbG" firstAttribute="leading" secondItem="NdQ-U1-qH2" secondAttribute="leading" constant="10" id="YeU-t9-bDk"/>
+                            <constraint firstItem="NdQ-U1-qH2" firstAttribute="trailing" secondItem="iqL-7Y-JbG" secondAttribute="trailing" constant="10" id="dUZ-WM-tus"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Orders" image="cart.fill" catalog="system" id="wsv-dC-V3K"/>
                 </viewController>
@@ -553,6 +610,8 @@
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="dog.png" width="447" height="479"/>
         <image name="ellipsis.message.fill" catalog="system" width="128" height="114"/>
+        <image name="food-delivery" width="999" height="1080"/>
+        <image name="food-pickup" width="1000" height="1080"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
