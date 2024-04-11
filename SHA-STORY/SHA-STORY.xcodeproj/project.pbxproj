@@ -18,6 +18,7 @@
 		2221F80A2B83F4300056A1E2 /* SHA_STORYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221F8092B83F4300056A1E2 /* SHA_STORYUITests.swift */; };
 		2221F80C2B83F4300056A1E2 /* SHA_STORYUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221F80B2B83F4300056A1E2 /* SHA_STORYUITestsLaunchTests.swift */; };
 		320594F92B87042E00650A92 /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = 320594F82B87042E00650A92 /* AnimatedGradientView */; };
+		320BC7272BC7B728000626DD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BC7262BC7B728000626DD /* LoginVC.swift */; };
 		32C006B42B9BC6680037AD31 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 32C006B32B9BC6680037AD31 /* FirebaseAuth */; };
 		32C006B62B9BC6C30037AD31 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 32C006B52B9BC6C30037AD31 /* FirebaseAnalytics */; };
 		32C006B82B9BC6C30037AD31 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 32C006B72B9BC6C30037AD31 /* FirebaseDatabase */; };
@@ -60,6 +61,7 @@
 		2221F8052B83F4300056A1E2 /* SHA-STORYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SHA-STORYUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2221F8092B83F4300056A1E2 /* SHA_STORYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA_STORYUITests.swift; sourceTree = "<group>"; };
 		2221F80B2B83F4300056A1E2 /* SHA_STORYUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA_STORYUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		320BC7262BC7B728000626DD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		32C006BC2B9BCB3A0037AD31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		32C006C02B9C02F20037AD31 /* ReserveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveVC.swift; sourceTree = "<group>"; };
 		32DDD7272BB520B300827EAA /* ReserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				32C006B92B9BC7A10037AD31 /* SupportingFiles */,
 				2221F7EC2B83F42F0056A1E2 /* SHA_STORY.swift */,
 				2221F7EE2B83F42F0056A1E2 /* Main.storyboard */,
+				320BC7262BC7B728000626DD /* LoginVC.swift */,
 				0C1C97282B9AAFCF0089F466 /* RegistrationViewController.swift */,
 				32DDD7272BB520B300827EAA /* ReserveViewController.swift */,
 				2221F7F12B83F4300056A1E2 /* Assets.xcassets */,
@@ -315,6 +318,7 @@
 			files = (
 				2221F7ED2B83F42F0056A1E2 /* SHA_STORY.swift in Sources */,
 				2221F7E92B83F42F0056A1E2 /* AppDelegate.swift in Sources */,
+				320BC7272BC7B728000626DD /* LoginVC.swift in Sources */,
 				0C1C97292B9AAFCF0089F466 /* RegistrationViewController.swift in Sources */,
 				2221F7EB2B83F42F0056A1E2 /* SceneDelegate.swift in Sources */,
 				32C006C12B9C02F20037AD31 /* ReserveVC.swift in Sources */,

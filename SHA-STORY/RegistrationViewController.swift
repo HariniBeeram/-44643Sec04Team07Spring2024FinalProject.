@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class RegistrationViewController: UIViewController {
     
@@ -18,38 +19,75 @@ class RegistrationViewController: UIViewController {
     
     @IBOutlet weak var ConfirmPasswordTF: UITextField!
     
+    
+    @IBAction func rePasswordCheck(_ sender: UITextField) {
+        guard let password = sender.text else { return }
+        if password.count < 8 {
+            meessageLBL.text =  "Password must be at least 6 characters long!"
+        } else {
+            meessageLBL.text = ""
+        }
+    }
+    
+    @IBAction func passwordCheck(_ sender: UITextField) {
+        guard let password = sender.text else { return }
+        if password.count < 8 {
+            meessageLBL.text =  "Password must be at least 6 characters long!"
+        } else {
+            meessageLBL.text = ""
+        }
+    }
+    
+    
+    @IBOutlet weak var registerBTN: UIButton!
+    
+    @IBAction func createUser(_ sender: UIButton) {
+        guard let email = UsernameTF.text, !email.isEmpty else {
+            meessageLBL.text = "Please enter email!"
+            return
+        }
+        
+        guard let password = PasswordTF.text, !password.isEmpty else {
+            meessageLBL.text =  "Please enter password in both fields!"
+            return
+        }
+        
+        guard let checkPassword = ConfirmPasswordTF.text, !checkPassword.isEmpty else {
+            meessageLBL.text =  "Please enter password in both fields!"
+            return
+        }
+        
+        guard password == checkPassword else {
+            meessageLBL.text = "Password should match!"
+            return
+        }
+        
+        guard password.count >= 8 else {
+            meessageLBL.text = "Password must be at least 6 characters long!"
+            return
+        }
+        
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] authResult, error in
+            if let error = error {
+                self?.meessageLBL.text = "Invalid details"
+            } else {
+                
+                self?.performSegue(withIdentifier: "CreateAccount", sender: self)
+            }
+        }
+    }
+    
+    @IBAction func cancelAccountCreation(_ sender: Any) {
+        self.performSegue(withIdentifier: "CreateAccount", sender: self)
+    }
+    @IBOutlet weak var meessageLBL: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        PasswordTF.isEnabled=false
-        ConfirmPasswordTF.isEnabled=false
+        
         // Do any additional setup after loading the view.
     }
-    
-    
-    @IBAction func userName(_ sender: UITextField) {
-        
-        guard let text=UsernameTF.text, !text.isEmpty else{return}
-        PasswordTF.isEnabled=true
-    }
-    
-    
-    @IBAction func password(_ sender: UITextField) {
-        
-        guard let passText=PasswordTF.text, !passText.isEmpty else{return}
-        ConfirmPasswordTF.isEnabled=true
-    }
-    
-    @IBAction func SignupBTN(_ sender: UIButton) {
-    }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
+
