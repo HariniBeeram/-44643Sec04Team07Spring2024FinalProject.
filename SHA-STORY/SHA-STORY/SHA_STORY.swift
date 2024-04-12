@@ -43,6 +43,8 @@ class SHA_STORY: UIViewController {
                 }
             }
         }
+   
+
     
     @IBOutlet weak var taglineLBL: UILabel!{
         didSet{
@@ -63,6 +65,22 @@ class SHA_STORY: UIViewController {
     
     
     @IBAction func LoginAction(_ sender: UIButton) {
+        guard let username = UsernameTF.text, !username.isEmpty else {
+                    showAlert(message: "Please enter your username")
+                    return
+                }
+                
+                guard let password = PasswordTF.text, !password.isEmpty else {
+                    showAlert(message: "Please enter your password")
+                    return
+                }
     }
+    private func showAlert(message: String) {
+            let alert = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+        }
+    }
+
     
-}
+
