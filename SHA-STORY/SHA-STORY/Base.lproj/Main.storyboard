@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qEO-Bz-jLi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Gb-2d-yem">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -449,7 +449,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TdB-vG-gKp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-341.2213740458015" y="85.91549295774648"/>
+            <point key="canvasLocation" x="-335" y="87"/>
+        </scene>
+        <!--Table Booking-->
+        <scene sceneID="3JC-bd-e6g">
+            <objects>
+                <viewController storyboardIdentifier="showTableReservation" id="5Gb-2d-yem" customClass="TableBooking" customModule="SHA_STORY" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aT9-J0-Nwo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Txd-8B-tUk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZLc-wP-qjx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wkY-Wv-3E2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-335.1145038167939" y="867.6056338028169"/>
         </scene>
         <!--Chat-->
         <scene sceneID="Jf4-L1-NPC">
@@ -657,6 +673,9 @@
             <point key="canvasLocation" x="1509" y="490"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jf4-cy-1f0"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
@@ -671,7 +690,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
