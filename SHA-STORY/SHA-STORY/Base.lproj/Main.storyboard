@@ -302,6 +302,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Delivery"/>
+                                <connections>
+                                    <action selector="Delivery:" destination="Tdz-5C-5RW" eventType="touchUpInside" id="poV-r6-8p3"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="food-delivery" translatesAutoresizingMaskIntoConstraints="NO" id="dnq-Vp-bhP">
                                 <rect key="frame" x="50" y="258" width="125" height="128"/>
@@ -316,6 +319,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="pickup"/>
+                                <connections>
+                                    <action selector="Pickup:" destination="Tdz-5C-5RW" eventType="touchUpInside" id="f1p-dM-AtZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NdQ-U1-qH2"/>
@@ -324,6 +330,7 @@
                     <tabBarItem key="tabBarItem" title="Orders" image="cart.fill" catalog="system" id="wsv-dC-V3K"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uBf-G4-yaB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Tdz-5C-5RW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1800.7633587786258" y="-311.26760563380282"/>
         </scene>

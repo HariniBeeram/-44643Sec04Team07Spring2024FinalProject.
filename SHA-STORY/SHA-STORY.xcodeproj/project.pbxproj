@@ -19,6 +19,7 @@
 		320594F92B87042E00650A92 /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = 320594F82B87042E00650A92 /* AnimatedGradientView */; };
 		C7045F302B884B8B0033D7C7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C7045F2F2B884B8B0033D7C7 /* Lottie */; };
 		C7D971E42BC9D48300EF16F8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D971E32BC9D48300EF16F8 /* HomeVC.swift */; };
+		C7D971E62BCA365B00EF16F8 /* OrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D971E52BCA365B00EF16F8 /* OrderVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		2221F8092B83F4300056A1E2 /* SHA_STORYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA_STORYUITests.swift; sourceTree = "<group>"; };
 		2221F80B2B83F4300056A1E2 /* SHA_STORYUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA_STORYUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C7D971E32BC9D48300EF16F8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		C7D971E52BCA365B00EF16F8 /* OrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderVC.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				2221F7EA2B83F42F0056A1E2 /* SceneDelegate.swift */,
 				2221F7EC2B83F42F0056A1E2 /* SHA_STORY.swift */,
 				2221F7EE2B83F42F0056A1E2 /* Main.storyboard */,
+				C7D971E52BCA365B00EF16F8 /* OrderVC.swift */,
 				C7D971E32BC9D48300EF16F8 /* HomeVC.swift */,
 				2221F7F12B83F4300056A1E2 /* Assets.xcassets */,
 				2221F7F32B83F4300056A1E2 /* LaunchScreen.storyboard */,
@@ -277,6 +280,7 @@
 				C7D971E42BC9D48300EF16F8 /* HomeVC.swift in Sources */,
 				2221F7E92B83F42F0056A1E2 /* AppDelegate.swift in Sources */,
 				2221F7EB2B83F42F0056A1E2 /* SceneDelegate.swift in Sources */,
+				C7D971E62BCA365B00EF16F8 /* OrderVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
