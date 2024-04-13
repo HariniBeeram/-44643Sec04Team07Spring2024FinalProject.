@@ -81,6 +81,10 @@ Created a Tap bar controller with 5 screens home, reserve, chat, Orders and acco
 Sprint 05:
 Developed order screen Ui. Created two navigation controllers for pickup and delivery in the order UI. Developed Reserve UI where three sections are added to select date, time and no of people required to reserve the tables. Added Eureka package to utilize in reserve UI.
 
+Sprint 06:
+Added 3D models to the project to use it in reserve functionality and used Scenekit to render 3d model on the view. Modified table view in the home page to adjust the layout
+
+
 
 
 
