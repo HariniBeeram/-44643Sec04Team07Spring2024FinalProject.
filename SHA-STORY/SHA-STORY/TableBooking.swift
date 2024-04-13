@@ -8,90 +8,68 @@
 import UIKit
 import ARKit
 import SceneKit
-class TableBooking: UIViewController,ARSCNViewDelegate {
+class TableBooking: UIViewController {
 
-    @IBOutlet weak var arView: ARSCNView!
-    var tableNodes: [SCNNode] = []
        
-       override func viewDidLoad() {
-           super.viewDidLoad()
-           
-           // Set the view's delegate
-           arView.delegate = self
-           
-           // Create a new scene
-           let scene = SCNScene()
-           
-           // Set the scene to the view
-           arView.scene = scene
-           
-           // Add tap gesture recognizer
-           let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
-           arView.addGestureRecognizer(tapGesture)
-           
-           // Create a session configuration
-           let configuration = ARWorldTrackingConfiguration()
-           
-           // Run the view's session
-           arView.session.run(configuration)
-           
-           // Add tables to the scene
-           addTables()
-           
-           // Load booking state
-          // loadBookingState()
-       }
-       
-       @objc func handleTap(_ gesture: UITapGestureRecognizer) {
-           // Get the location of the tap gesture
-           let tapLocation = gesture.location(in: arView)
-           
-           // Perform hit test to find out which object was tapped
-           let hitTestResults = arView.hitTest(tapLocation)
-           
-           // Check if any table nodes were hit
-           for result in hitTestResults {
-               if tableNodes.contains(result.node) {
-                   // Handle the tap on the table node
-                   if let tableIndex = tableNodes.firstIndex(of: result.node) {
-                       // Simulate booking by changing the color of the table node
-                       result.node.geometry?.firstMaterial?.diffuse.contents = UIColor.red
-                       // Update booking state
-                       //UserDefaults.standard.set(true, forKey: "Table\(tableIndex)")
-                       print("Table \(tableIndex + 1) booked!")
+    @IBOutlet weak var imgView: SCNView!
+    var tableNode: SCNNode? // Keep reference to the table node
+
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            guard let url = Bundle.main.url(forResource: "room", withExtension: "usdz"),
+                         let scene = try? SCNScene(url: url) else {
+                       fatalError("Failed to load the USDZ file.")
                    }
-               }
-           }
-       }
-       
-       func addTables() {
-           // Example table positions
-           let tablePositions: [SCNVector3] = [
-               SCNVector3(0, 0, -5),
-               SCNVector3(2, 0, -5),
-               SCNVector3(-2, 0, -5)
-           ]
-           
-           // Load the table model (assuming a cube representing a big-sized table)
-           let tableNode = SCNNode(geometry: SCNBox(width: 2.0, height: 1.0, length: 2.0, chamferRadius: 0.1)) // Adjust size as needed
-           tableNode.geometry?.firstMaterial?.diffuse.contents = UIColor.green // Initial color
-           
-           // Add tables to the scene at specified positions
-           for position in tablePositions {
-               let clonedTableNode = tableNode.clone()
-               clonedTableNode.position = position
-               arView.scene.rootNode.addChildNode(clonedTableNode)
-               tableNodes.append(clonedTableNode) // Add the table node to the array
-           }
-       }
-       
-       func loadBookingState() {
-           for (index, node) in tableNodes.enumerated() {
-               let isBooked = UserDefaults.standard.bool(forKey: "Table\(index)")
-               if isBooked {
-                   // Change the color of the table node to indicate it's booked
-                   node.geometry?.firstMaterial?.diffuse.contents = UIColor.red
-               }
-           }
-       }
-   }
+
+            // Set the scene to the view
+            imgView.scene = scene
+            imgView.backgroundColor = UIColor.white // Set background color if needed
+            imgView.autoenablesDefaultLighting = true // Enable default lighting
+            imgView.isUserInteractionEnabled = true
+            // Allows the user to manipulate the camera
+            imgView.allowsCameraControl = true
+            imgView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 2)
+            print("scene\(scene)")
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+                 imgView.addGestureRecognizer(tapGesture)
+            let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(handlePinch(_:)))
+                   imgView.addGestureRecognizer(pinchGesture)
+        }
+    @objc func handlePinch(_ gesture: UIPinchGestureRecognizer) {
+        guard let scene = imgView.scene else { return }
+        print("Pinch gesture recognized!")
+        if gesture.state == .changed {
+            // Calculate the new scale based on pinch gesture
+            let newScaleX = scene.rootNode.scale.x * Float(gesture.scale)
+                    let newScaleY = scene.rootNode.scale.y * Float(gesture.scale)
+                    let newScaleZ = scene.rootNode.scale.z * Float(gesture.scale)
+
+                    // Limit the scale to prevent zooming too close or too far
+                    let minScale: Float = 0.5
+                    let maxScale: Float = 2.0
+                    let clampedScaleX = min(max(newScaleX, minScale), maxScale)
+                    let clampedScaleY = min(max(newScaleY, minScale), maxScale)
+                    let clampedScaleZ = min(max(newScaleZ, minScale), maxScale)
+
+                    // Apply the new scale to the root node
+                    scene.rootNode.scale = SCNVector3(clampedScaleX, clampedScaleY, clampedScaleZ)
+
+                    // Reset gesture scale for the next pinch gesture
+                    gesture.scale = 1.0
+                }
+    }
+    @objc func handleTap(_ gesture: UITapGestureRecognizer) {
+        // Get the location of the tap in the scene view
+        let location = gesture.location(in: imgView)
+        let hitTestResults = imgView.hitTest(location, options: nil)
+        
+        // Check if a node was tapped
+        if let tappedNode = hitTestResults.first?.node {
+            // Get the name of the tapped node
+            let nodeName = tappedNode.name ?? "Unnamed Node"
+            print("Tapped node name: \(nodeName)")
+            let newColor = UIColor.red
+                   tappedNode.geometry?.firstMaterial?.diffuse.contents = newColor
+        }
+    }
+}

@@ -22,6 +22,8 @@
 		320BC7272BC7B728000626DD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BC7262BC7B728000626DD /* LoginVC.swift */; };
 		320BC7292BCA09F1000626DD /* Restaurant.dae in Resources */ = {isa = PBXBuildFile; fileRef = 320BC7282BCA09F1000626DD /* Restaurant.dae */; };
 		320BC72B2BCA0A97000626DD /* RestaurantLayout.scn in Resources */ = {isa = PBXBuildFile; fileRef = 320BC72A2BCA0A97000626DD /* RestaurantLayout.scn */; };
+		32B7D12C2BCA211F00A9F2E2 /* Market_Table.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 32B7D12B2BCA211F00A9F2E2 /* Market_Table.usdz */; };
+		32B7D12E2BCA222600A9F2E2 /* room.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 32B7D12D2BCA222600A9F2E2 /* room.usdz */; };
 		32C006B42B9BC6680037AD31 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 32C006B32B9BC6680037AD31 /* FirebaseAuth */; };
 		32C006B62B9BC6C30037AD31 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 32C006B52B9BC6C30037AD31 /* FirebaseAnalytics */; };
 		32C006B82B9BC6C30037AD31 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 32C006B72B9BC6C30037AD31 /* FirebaseDatabase */; };
@@ -68,6 +70,8 @@
 		320BC7262BC7B728000626DD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		320BC7282BCA09F1000626DD /* Restaurant.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Restaurant.dae; sourceTree = "<group>"; };
 		320BC72A2BCA0A97000626DD /* RestaurantLayout.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = RestaurantLayout.scn; path = ../../../../../../RestaurantLayout.scn; sourceTree = "<group>"; };
+		32B7D12B2BCA211F00A9F2E2 /* Market_Table.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Market_Table.usdz; sourceTree = "<group>"; };
+		32B7D12D2BCA222600A9F2E2 /* room.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = room.usdz; sourceTree = "<group>"; };
 		32C006BC2B9BCB3A0037AD31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		32C006C02B9C02F20037AD31 /* ReserveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveVC.swift; sourceTree = "<group>"; };
 		32DDD7272BB520B300827EAA /* ReserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 				2221F7F32B83F4300056A1E2 /* LaunchScreen.storyboard */,
 				2221F7F62B83F4300056A1E2 /* Info.plist */,
 				320BC7282BCA09F1000626DD /* Restaurant.dae */,
+				32B7D12D2BCA222600A9F2E2 /* room.usdz */,
+				32B7D12B2BCA211F00A9F2E2 /* Market_Table.usdz */,
 				320BC72A2BCA0A97000626DD /* RestaurantLayout.scn */,
 				32C006C02B9C02F20037AD31 /* ReserveVC.swift */,
 				2C0C436A2BC986260069D6D8 /* TableBooking.swift */,
@@ -303,6 +309,8 @@
 				32C006BD2B9BCB3A0037AD31 /* GoogleService-Info.plist in Resources */,
 				2221F7F22B83F4300056A1E2 /* Assets.xcassets in Resources */,
 				2221F7F02B83F42F0056A1E2 /* Main.storyboard in Resources */,
+				32B7D12E2BCA222600A9F2E2 /* room.usdz in Resources */,
+				32B7D12C2BCA211F00A9F2E2 /* Market_Table.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

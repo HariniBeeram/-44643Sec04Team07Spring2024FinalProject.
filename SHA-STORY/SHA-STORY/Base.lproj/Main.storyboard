@@ -458,10 +458,29 @@
                     <view key="view" contentMode="scaleToFill" id="aT9-J0-Nwo">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="305-J8-A6T">
+                                <rect key="frame" x="10" y="79" width="373" height="489"/>
+                                <subviews>
+                                    <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLj-rt-l0h">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="489"/>
+                                    </sceneKitView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Txd-8B-tUk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="305-J8-A6T" firstAttribute="top" secondItem="Txd-8B-tUk" secondAttribute="top" constant="20" id="CKt-Ef-8TX"/>
+                            <constraint firstItem="Txd-8B-tUk" firstAttribute="bottom" secondItem="305-J8-A6T" secondAttribute="bottom" constant="250" id="LKY-Uk-Q4K"/>
+                            <constraint firstItem="Txd-8B-tUk" firstAttribute="trailing" secondItem="305-J8-A6T" secondAttribute="trailing" constant="10" id="S13-1q-bUE"/>
+                            <constraint firstItem="305-J8-A6T" firstAttribute="leading" secondItem="Txd-8B-tUk" secondAttribute="leading" constant="10" id="lzT-SQ-4s4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZLc-wP-qjx"/>
+                    <connections>
+                        <outlet property="imgView" destination="fLj-rt-l0h" id="wQ0-gU-7tn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wkY-Wv-3E2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -690,7 +709,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
