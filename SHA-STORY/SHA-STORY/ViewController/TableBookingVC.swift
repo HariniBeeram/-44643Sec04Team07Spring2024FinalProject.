@@ -8,13 +8,14 @@
 import UIKit
 import ARKit
 import SceneKit
+import Firebase
 class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
 
     @IBOutlet weak var reserve: UIButton!
     
     @IBOutlet weak var imgView: SCNView!
     var tableNode: SCNNode? // Keep reference to the table node
-
+    var tableNodes:[String] = ["Object_20","Object_124","Object_98","Object_194","Object_150","Object_72","Object_592","Object_615"]
         override func viewDidLoad() {
             print("username: \(AppDelegate.username)")
             super.viewDidLoad()
@@ -33,6 +34,7 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
             print("scene\(scene)")
             let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
                  imgView.addGestureRecognizer(tapGesture)
+            
         }
    
     @objc func handleTap(_ gesture: UITapGestureRecognizer) {
@@ -48,5 +50,29 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
                    tappedNode.geometry?.firstMaterial?.diffuse.contents = newColor
         }
     }
+    func handleTableSelection(selectedDate: Date, selectedTime: String, reservedTables: [String]) {
+        let db = Firestore.firestore()
+          // Construct table reservation object
+          let reservationData: [String: Any] = [
+              "date": selectedDate,
+              "time": selectedTime,
+              "reservedTables": reservedTables
+          ]
+          
+          // Format document ID using selected date and time
+          let dateFormatter = DateFormatter()
+          dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+          let documentID = dateFormatter.string(from: selectedDate) + "_" + selectedTime
+          
+          // Add table reservation data to Firestore
+          db.collection("Table Reservation").document(documentID).setData(reservationData) { error in
+              if let error = error {
+                  print("Error adding table reservation: \(error.localizedDescription)")
+              } else {
+                  print("Table reservation added successfully!")
+              }
+          }
+      }
+      
 }
 
