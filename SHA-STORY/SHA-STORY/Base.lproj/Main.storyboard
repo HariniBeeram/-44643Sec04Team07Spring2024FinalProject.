@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Gb-2d-yem">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vqv-oq-TWe">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -14,7 +14,7 @@
             <objects>
                 <viewController title="Home" modalPresentationStyle="fullScreen" id="lL4-Br-OBd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tff-Kk-nlz" userLabel="Home">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="SHA STORY🔖" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k9t-Cu-t09">
@@ -138,7 +138,6 @@
                         <outlet property="messageLBL" destination="Aah-rq-foX" id="8ze-H8-Rgn"/>
                         <outlet property="passwordTF" destination="vZm-DH-00O" id="Wxu-aA-r2D"/>
                         <outlet property="usernameTF" destination="jWy-Ci-kxd" id="ped-x2-hJ6"/>
-                        <segue destination="vqv-oq-TWe" kind="show" identifier="ShowMenu" id="DbQ-1n-W8e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ssl-mu-X08" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -414,7 +413,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Pdv-Wt-mbk">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="vqv-oq-TWe" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="shaStoryTapBar" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="vqv-oq-TWe" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="HHs-8N-gTF"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" shadowImage="dog.png" id="SG4-gD-c7u">
@@ -440,12 +439,15 @@
             <objects>
                 <viewController title="Reserve" modalPresentationStyle="fullScreen" id="PbW-GN-pVW" customClass="ReserveViewController" customModule="SHA_STORY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z5O-gF-FF8" userLabel="Reserve">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="o4J-sd-80p"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Reserve" image="book" catalog="system" id="C1N-90-riU"/>
+                    <connections>
+                        <segue destination="0An-hL-Vz5" kind="showDetail" identifier="reserveTable" id="5dj-lP-8GJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TdB-vG-gKp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -456,15 +458,20 @@
             <objects>
                 <viewController storyboardIdentifier="showTableReservation" id="5Gb-2d-yem" customClass="TableBooking" customModule="SHA_STORY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aT9-J0-Nwo">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="305-J8-A6T">
-                                <rect key="frame" x="10" y="79" width="373" height="489"/>
+                                <rect key="frame" x="10" y="128" width="373" height="464"/>
                                 <subviews>
                                     <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLj-rt-l0h">
-                                        <rect key="frame" x="0.0" y="0.0" width="373" height="489"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="429.66666666666669"/>
                                     </sceneKitView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h06-w7-Y3e">
+                                        <rect key="frame" x="0.0" y="429.66666666666663" width="373" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Reserve" cornerStyle="capsule"/>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -480,18 +487,19 @@
                     <navigationItem key="navigationItem" id="ZLc-wP-qjx"/>
                     <connections>
                         <outlet property="imgView" destination="fLj-rt-l0h" id="wQ0-gU-7tn"/>
+                        <outlet property="reserve" destination="h06-w7-Y3e" id="Cda-wY-vKk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wkY-Wv-3E2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-335.1145038167939" y="867.6056338028169"/>
+            <point key="canvasLocation" x="591.60305343511448" y="867.6056338028169"/>
         </scene>
         <!--Chat-->
         <scene sceneID="Jf4-L1-NPC">
             <objects>
                 <viewController title="Chat" modalPresentationStyle="fullScreen" id="cK0-hy-7pr" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tVa-K5-kk9" userLabel="chat">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="UbW-m6-6rR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -507,14 +515,14 @@
             <objects>
                 <viewController title="Order" modalPresentationStyle="fullScreen" id="8rJ-uX-4EL" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9a3-Lr-Hag" userLabel="Order">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iqL-7Y-JbG" userLabel="BigContainerSV">
-                                <rect key="frame" x="10" y="10" width="373" height="773"/>
+                                <rect key="frame" x="10" y="69" width="373" height="690"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiF-up-T4g">
-                                        <rect key="frame" x="0.0" y="0.0" width="373" height="252.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="224.66666666666666"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Order Type">
                                                 <attributes>
@@ -527,13 +535,13 @@
                                         <color key="highlightedColor" cyan="0.31181708920000001" magenta="0.95686735140000001" yellow="0.26611669580000002" black="0.0034514546859999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JS6-3U-h6U" userLabel="DeliverySV">
-                                        <rect key="frame" x="0.0" y="260.33333333333331" width="373" height="252.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="232.66666666666669" width="373" height="224.66666666666669"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food-delivery" translatesAutoresizingMaskIntoConstraints="NO" id="dnq-Vp-bhP">
-                                                <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="252.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="224.66666666666666"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKV-vr-mS8">
-                                                <rect key="frame" x="190.66666666666663" y="109" width="182.33333333333337" height="34.333333333333343"/>
+                                                <rect key="frame" x="190.66666666666663" y="95.333333333333314" width="182.33333333333337" height="34.333333333333343"/>
                                                 <color key="tintColor" cyan="0.31181708920000001" magenta="0.95686735140000001" yellow="0.26611669580000002" black="0.0034514546859999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Delivery">
@@ -548,10 +556,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Las-hR-fS3" userLabel="PickUpSV">
-                                        <rect key="frame" x="0.0" y="520.66666666666663" width="373" height="252.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="465.33333333333343" width="373" height="224.66666666666669"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V75-N6-Cl9">
-                                                <rect key="frame" x="0.0" y="109" width="182.66666666666666" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="95.333333333333258" width="182.66666666666666" height="34.333333333333343"/>
                                                 <color key="tintColor" cyan="0.31181708920000001" magenta="0.95686735140000001" yellow="0.26611669580000002" black="0.0034514546859999999" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="pickup">
@@ -564,7 +572,7 @@
                                                 </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food-pickup" translatesAutoresizingMaskIntoConstraints="NO" id="K7h-kO-tlL" userLabel="pickupImage">
-                                                <rect key="frame" x="190.66666666666663" y="0.0" width="182.33333333333337" height="252.33333333333334"/>
+                                                <rect key="frame" x="190.66666666666663" y="0.0" width="182.33333333333337" height="224.66666666666666"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
@@ -631,7 +639,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iaN-4Z-pzG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2878.6259541984732" y="295.77464788732397"/>
+            <point key="canvasLocation" x="3805.3435114503814" y="295.77464788732397"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9Sf-Eb-Jej">
@@ -673,14 +681,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWP-qc-Vhm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3991.6030534351144" y="295.77464788732397"/>
+            <point key="canvasLocation" x="4918.320610687023" y="295.77464788732397"/>
         </scene>
         <!--Account-->
         <scene sceneID="FVc-FO-c5e">
             <objects>
                 <viewController title="Account" modalPresentationStyle="fullScreen" id="Tgu-tl-Je9" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="85Q-Um-OPn" userLabel="Account">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="WhC-P8-8Pc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -689,12 +697,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IeW-VJ-brx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1509" y="490"/>
+            <point key="canvasLocation" x="2434.3511450381679" y="489.43661971830988"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9cr-vA-x3D">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0An-hL-Vz5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="s8q-yF-0Qs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="108"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5Gb-2d-yem" kind="relationship" relationship="rootViewController" id="bwV-uS-FMc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JDk-dY-Ghr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-335.1145038167939" y="867.6056338028169"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="jf4-cy-1f0"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
