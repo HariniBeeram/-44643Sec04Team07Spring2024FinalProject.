@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vqv-oq-TWe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qEO-Bz-jLi">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -144,10 +144,10 @@
             </objects>
             <point key="canvasLocation" x="-1535" y="-688"/>
         </scene>
-        <!--Registration View Controller-->
+        <!--RegistrationVC-->
         <scene sceneID="nYY-rb-u8c">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="MjY-UO-9ng" customClass="RegistrationViewController" customModule="SHA_STORY" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="MjY-UO-9ng" customClass="RegistrationVC" customModule="SHA_STORY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qse-fu-Avy">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -201,7 +201,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                         <connections>
-                                                            <action selector="passwordCheck:" destination="MjY-UO-9ng" eventType="editingDidEnd" id="rAV-U3-i1V"/>
+                                                            <action selector="passwordCheck:" destination="MjY-UO-9ng" eventType="editingDidEnd" id="XJ4-sc-PiR"/>
                                                         </connections>
                                                     </textField>
                                                 </subviews>
@@ -222,7 +222,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                         <connections>
-                                                            <action selector="rePasswordCheck:" destination="MjY-UO-9ng" eventType="editingDidEnd" id="BEz-gr-ZpQ"/>
+                                                            <action selector="rePasswordCheck:" destination="MjY-UO-9ng" eventType="editingDidEnd" id="9xB-af-EZh"/>
                                                         </connections>
                                                     </textField>
                                                 </subviews>
@@ -247,7 +247,7 @@
                                                             </backgroundConfiguration>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="createUser:" destination="MjY-UO-9ng" eventType="touchUpInside" id="Jyv-oU-dC4"/>
+                                                            <action selector="createUser:" destination="MjY-UO-9ng" eventType="touchUpInside" id="hVX-Ix-JgQ"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xb-cc-BvV">
@@ -261,7 +261,7 @@
                                                             </backgroundConfiguration>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="cancelAccountCreation:" destination="MjY-UO-9ng" eventType="touchUpInside" id="oHe-D6-Hhj"/>
+                                                            <action selector="cancelAccountCreation:" destination="MjY-UO-9ng" eventType="touchUpInside" id="ex8-2S-gYd"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -287,11 +287,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="DVd-Xq-eZh"/>
                     <connections>
-                        <outlet property="ConfirmPasswordTF" destination="Y7Z-bR-jms" id="Lyk-qt-LxX"/>
-                        <outlet property="PasswordTF" destination="4rn-tb-fZW" id="LWc-v4-keH"/>
-                        <outlet property="UsernameTF" destination="Q80-VC-z3t" id="ohw-CF-DY7"/>
-                        <outlet property="meessageLBL" destination="p3B-Vd-k1x" id="F37-gE-blF"/>
-                        <outlet property="registerBTN" destination="UYh-ZI-5R4" id="0Fd-wh-boF"/>
+                        <outlet property="ConfirmPasswordTF" destination="Y7Z-bR-jms" id="ZQX-oL-VJv"/>
+                        <outlet property="PasswordTF" destination="4rn-tb-fZW" id="B8B-pL-IdF"/>
+                        <outlet property="UsernameTF" destination="Q80-VC-z3t" id="yLB-Fp-5H4"/>
+                        <outlet property="meessageLBL" destination="p3B-Vd-k1x" id="0z0-8I-XEH"/>
+                        <outlet property="registerBTN" destination="UYh-ZI-5R4" id="U4Q-Px-FdT"/>
                         <segue destination="qEO-Bz-jLi" kind="show" identifier="CreateAccount" id="ikg-GB-H4z"/>
                     </connections>
                 </viewController>
@@ -437,7 +437,7 @@
         <!--Reserve-->
         <scene sceneID="tOh-lC-vzQ">
             <objects>
-                <viewController title="Reserve" modalPresentationStyle="fullScreen" id="PbW-GN-pVW" customClass="ReserveViewController" customModule="SHA_STORY" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Reserve" modalPresentationStyle="fullScreen" id="PbW-GN-pVW" customClass="ReserveVC" customModule="SHA_STORY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z5O-gF-FF8" userLabel="Reserve">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -453,10 +453,10 @@
             </objects>
             <point key="canvasLocation" x="-335" y="87"/>
         </scene>
-        <!--Table Booking-->
+        <!--Table BookingVC-->
         <scene sceneID="3JC-bd-e6g">
             <objects>
-                <viewController storyboardIdentifier="showTableReservation" id="5Gb-2d-yem" customClass="TableBooking" customModule="SHA_STORY" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="showTableReservation" id="5Gb-2d-yem" customClass="TableBookingVC" customModule="SHA_STORY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aT9-J0-Nwo">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -718,6 +718,9 @@
             <point key="canvasLocation" x="-335.1145038167939" y="867.6056338028169"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jf4-cy-1f0"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>

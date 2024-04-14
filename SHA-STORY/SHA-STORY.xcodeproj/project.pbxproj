@@ -16,25 +16,23 @@
 		2221F8002B83F4300056A1E2 /* SHA_STORYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221F7FF2B83F4300056A1E2 /* SHA_STORYTests.swift */; };
 		2221F80A2B83F4300056A1E2 /* SHA_STORYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221F8092B83F4300056A1E2 /* SHA_STORYUITests.swift */; };
 		2221F80C2B83F4300056A1E2 /* SHA_STORYUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221F80B2B83F4300056A1E2 /* SHA_STORYUITestsLaunchTests.swift */; };
-		2C0C436B2BC986260069D6D8 /* TableBooking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C436A2BC986260069D6D8 /* TableBooking.swift */; };
+		2C0C436B2BC986260069D6D8 /* TableBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C436A2BC986260069D6D8 /* TableBookingVC.swift */; };
 		320594F92B87042E00650A92 /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = 320594F82B87042E00650A92 /* AnimatedGradientView */; };
 		320BC7272BC7B728000626DD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BC7262BC7B728000626DD /* LoginVC.swift */; };
 		320BC7292BCA09F1000626DD /* Restaurant.dae in Resources */ = {isa = PBXBuildFile; fileRef = 320BC7282BCA09F1000626DD /* Restaurant.dae */; };
-		320BC72B2BCA0A97000626DD /* RestaurantLayout.scn in Resources */ = {isa = PBXBuildFile; fileRef = 320BC72A2BCA0A97000626DD /* RestaurantLayout.scn */; };
 		328D840C2BCB2400003E1B87 /* restaurantLayout2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 328D840B2BCB2400003E1B87 /* restaurantLayout2.usdz */; };
 		328D840E2BCB2638003E1B87 /* cafe_interior.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 328D840D2BCB2637003E1B87 /* cafe_interior.usdz */; };
 		328D84102BCB2795003E1B87 /* restaurant3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 328D840F2BCB2795003E1B87 /* restaurant3.usdz */; };
-		328D84132BCB83D5003E1B87 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328D84122BCB83D5003E1B87 /* RegistrationViewController.swift */; };
 		328D84152BCB8454003E1B87 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328D84142BCB8454003E1B87 /* HomeVC.swift */; };
+		328D84172BCC793F003E1B87 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328D84162BCC793F003E1B87 /* RegistrationVC.swift */; };
 		32B7D12C2BCA211F00A9F2E2 /* Market_Table.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 32B7D12B2BCA211F00A9F2E2 /* Market_Table.usdz */; };
 		32B7D12E2BCA222600A9F2E2 /* room.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 32B7D12D2BCA222600A9F2E2 /* room.usdz */; };
 		32C006B42B9BC6680037AD31 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 32C006B32B9BC6680037AD31 /* FirebaseAuth */; };
 		32C006B62B9BC6C30037AD31 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 32C006B52B9BC6C30037AD31 /* FirebaseAnalytics */; };
 		32C006B82B9BC6C30037AD31 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 32C006B72B9BC6C30037AD31 /* FirebaseDatabase */; };
 		32C006BD2B9BCB3A0037AD31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32C006BC2B9BCB3A0037AD31 /* GoogleService-Info.plist */; };
-		32C006C12B9C02F20037AD31 /* ReserveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C006C02B9C02F20037AD31 /* ReserveVC.swift */; };
 		32DDD7262BB51EBD00827EAA /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = 32DDD7252BB51EBD00827EAA /* Eureka */; };
-		32DDD7282BB520B300827EAA /* ReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDD7272BB520B300827EAA /* ReserveViewController.swift */; };
+		32DDD7282BB520B300827EAA /* ReserveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDD7272BB520B300827EAA /* ReserveVC.swift */; };
 		C7045F302B884B8B0033D7C7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C7045F2F2B884B8B0033D7C7 /* Lottie */; };
 /* End PBXBuildFile section */
 
@@ -69,20 +67,18 @@
 		2221F8052B83F4300056A1E2 /* SHA-STORYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SHA-STORYUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2221F8092B83F4300056A1E2 /* SHA_STORYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA_STORYUITests.swift; sourceTree = "<group>"; };
 		2221F80B2B83F4300056A1E2 /* SHA_STORYUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA_STORYUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		2C0C436A2BC986260069D6D8 /* TableBooking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableBooking.swift; sourceTree = "<group>"; };
+		2C0C436A2BC986260069D6D8 /* TableBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableBookingVC.swift; sourceTree = "<group>"; };
 		320BC7262BC7B728000626DD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		320BC7282BCA09F1000626DD /* Restaurant.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Restaurant.dae; sourceTree = "<group>"; };
-		320BC72A2BCA0A97000626DD /* RestaurantLayout.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = RestaurantLayout.scn; path = ../../../../../../RestaurantLayout.scn; sourceTree = "<group>"; };
 		328D840B2BCB2400003E1B87 /* restaurantLayout2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = restaurantLayout2.usdz; sourceTree = "<group>"; };
 		328D840D2BCB2637003E1B87 /* cafe_interior.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cafe_interior.usdz; sourceTree = "<group>"; };
 		328D840F2BCB2795003E1B87 /* restaurant3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = restaurant3.usdz; sourceTree = "<group>"; };
-		328D84122BCB83D5003E1B87 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistrationViewController.swift; path = "../../../../../test/44643Sec04Team07Spring2024FinalProject./SHA-STORY/RegistrationViewController.swift"; sourceTree = "<group>"; };
 		328D84142BCB8454003E1B87 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		328D84162BCC793F003E1B87 /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
 		32B7D12B2BCA211F00A9F2E2 /* Market_Table.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Market_Table.usdz; sourceTree = "<group>"; };
 		32B7D12D2BCA222600A9F2E2 /* room.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = room.usdz; sourceTree = "<group>"; };
 		32C006BC2B9BCB3A0037AD31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		32C006C02B9C02F20037AD31 /* ReserveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveVC.swift; sourceTree = "<group>"; };
-		32DDD7272BB520B300827EAA /* ReserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveViewController.swift; sourceTree = "<group>"; };
+		32DDD7272BB520B300827EAA /* ReserveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +146,6 @@
 				320BC7282BCA09F1000626DD /* Restaurant.dae */,
 				32B7D12D2BCA222600A9F2E2 /* room.usdz */,
 				32B7D12B2BCA211F00A9F2E2 /* Market_Table.usdz */,
-				320BC72A2BCA0A97000626DD /* RestaurantLayout.scn */,
 				328D840D2BCB2637003E1B87 /* cafe_interior.usdz */,
 				328D840B2BCB2400003E1B87 /* restaurantLayout2.usdz */,
 				328D840F2BCB2795003E1B87 /* restaurant3.usdz */,
@@ -179,11 +174,10 @@
 			isa = PBXGroup;
 			children = (
 				320BC7262BC7B728000626DD /* LoginVC.swift */,
-				32DDD7272BB520B300827EAA /* ReserveViewController.swift */,
-				328D84122BCB83D5003E1B87 /* RegistrationViewController.swift */,
-				32C006C02B9C02F20037AD31 /* ReserveVC.swift */,
-				2C0C436A2BC986260069D6D8 /* TableBooking.swift */,
+				32DDD7272BB520B300827EAA /* ReserveVC.swift */,
+				2C0C436A2BC986260069D6D8 /* TableBookingVC.swift */,
 				328D84142BCB8454003E1B87 /* HomeVC.swift */,
+				328D84162BCC793F003E1B87 /* RegistrationVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -324,7 +318,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				320BC7292BCA09F1000626DD /* Restaurant.dae in Resources */,
-				320BC72B2BCA0A97000626DD /* RestaurantLayout.scn in Resources */,
 				328D840E2BCB2638003E1B87 /* cafe_interior.usdz in Resources */,
 				328D84102BCB2795003E1B87 /* restaurant3.usdz in Resources */,
 				2221F7F52B83F4300056A1E2 /* LaunchScreen.storyboard in Resources */,
@@ -360,13 +353,12 @@
 			files = (
 				2221F7ED2B83F42F0056A1E2 /* SHA_STORY.swift in Sources */,
 				2221F7E92B83F42F0056A1E2 /* AppDelegate.swift in Sources */,
-				328D84132BCB83D5003E1B87 /* RegistrationViewController.swift in Sources */,
 				328D84152BCB8454003E1B87 /* HomeVC.swift in Sources */,
+				328D84172BCC793F003E1B87 /* RegistrationVC.swift in Sources */,
 				320BC7272BC7B728000626DD /* LoginVC.swift in Sources */,
 				2221F7EB2B83F42F0056A1E2 /* SceneDelegate.swift in Sources */,
-				32C006C12B9C02F20037AD31 /* ReserveVC.swift in Sources */,
-				2C0C436B2BC986260069D6D8 /* TableBooking.swift in Sources */,
-				32DDD7282BB520B300827EAA /* ReserveViewController.swift in Sources */,
+				2C0C436B2BC986260069D6D8 /* TableBookingVC.swift in Sources */,
+				32DDD7282BB520B300827EAA /* ReserveVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
