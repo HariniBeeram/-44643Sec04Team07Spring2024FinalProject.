@@ -22,6 +22,13 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
     let reservingColor = UIColor.green
     let originalColor = UIColor.brown
     var tableNodes:[String] = ["Object_20","Object_124","Object_98","Object_194","Object_150","Object_72","Object_592","Object_615","Object_46"]
+    
+    
+    @IBAction func navigateToReserve(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+        
+    }
+    
     @IBAction func makeReservation(_ sender: Any) {
         var reservedTables: [String] = []
         

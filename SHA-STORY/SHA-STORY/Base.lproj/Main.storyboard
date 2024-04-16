@@ -445,6 +445,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Reserve" image="book" catalog="system" id="C1N-90-riU"/>
+                    <navigationItem key="navigationItem" title="Reserve" id="gKK-qd-LHz"/>
                     <connections>
                         <segue destination="0An-hL-Vz5" kind="showDetail" identifier="reserveTable" id="5dj-lP-8GJ"/>
                     </connections>
@@ -453,10 +454,10 @@
             </objects>
             <point key="canvasLocation" x="-335" y="87"/>
         </scene>
-        <!--Table BookingVC-->
+        <!--Table Booking-->
         <scene sceneID="3JC-bd-e6g">
             <objects>
-                <viewController storyboardIdentifier="showTableReservation" id="5Gb-2d-yem" customClass="TableBookingVC" customModule="SHA_STORY" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="showTableReservation" modalPresentationStyle="fullScreen" id="5Gb-2d-yem" customClass="TableBookingVC" customModule="SHA_STORY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aT9-J0-Nwo">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -465,18 +466,21 @@
                                 <rect key="frame" x="10" y="128" width="373" height="464"/>
                                 <subviews>
                                     <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLj-rt-l0h">
-                                        <rect key="frame" x="0.0" y="0.0" width="373" height="429.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="464"/>
                                     </sceneKitView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h06-w7-Y3e">
-                                        <rect key="frame" x="0.0" y="429.66666666666663" width="373" height="34.333333333333314"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Reserve" cornerStyle="capsule"/>
-                                        <connections>
-                                            <action selector="makeReservation:" destination="5Gb-2d-yem" eventType="touchUpInside" id="4xC-XK-YoR"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h06-w7-Y3e">
+                                <rect key="frame" x="10" y="692" width="373" height="34.333333333333314"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Reserve" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" red="0.56078431370000004" green="0.1058823529" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="makeReservation:" destination="5Gb-2d-yem" eventType="touchUpInside" id="4xC-XK-YoR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Txd-8B-tUk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -487,7 +491,13 @@
                             <constraint firstItem="305-J8-A6T" firstAttribute="leading" secondItem="Txd-8B-tUk" secondAttribute="leading" constant="10" id="lzT-SQ-4s4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ZLc-wP-qjx"/>
+                    <navigationItem key="navigationItem" title="Table Booking" id="ZLc-wP-qjx">
+                        <barButtonItem key="leftBarButtonItem" title="&lt; Reserve" id="6m5-Qm-cls">
+                            <connections>
+                                <action selector="navigateToReserve:" destination="5Gb-2d-yem" id="zYL-bD-z4a"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="imgView" destination="fLj-rt-l0h" id="wQ0-gU-7tn"/>
                         <outlet property="reserve" destination="h06-w7-Y3e" id="Cda-wY-vKk"/>
@@ -705,10 +715,10 @@
         <!--Navigation Controller-->
         <scene sceneID="9cr-vA-x3D">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0An-hL-Vz5" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="0An-hL-Vz5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="s8q-yF-0Qs">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="108"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
