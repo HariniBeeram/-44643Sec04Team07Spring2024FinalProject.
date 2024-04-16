@@ -471,6 +471,9 @@
                                         <rect key="frame" x="0.0" y="429.66666666666663" width="373" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Reserve" cornerStyle="capsule"/>
+                                        <connections>
+                                            <action selector="makeReservation:" destination="5Gb-2d-yem" eventType="touchUpInside" id="4xC-XK-YoR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -644,9 +647,9 @@
         <!--View Controller-->
         <scene sceneID="9Sf-Eb-Jej">
             <objects>
-                <viewController id="T0x-Mn-c2c" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="T0x-Mn-c2c" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gB1-z6-ngX">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6k-XS-I3W">
@@ -718,9 +721,6 @@
             <point key="canvasLocation" x="-335.1145038167939" y="867.6056338028169"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="jf4-cy-1f0"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>

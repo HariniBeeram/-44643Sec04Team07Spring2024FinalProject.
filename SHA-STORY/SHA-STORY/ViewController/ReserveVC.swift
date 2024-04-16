@@ -10,8 +10,8 @@ import Eureka
 
 class ReserveVC: FormViewController {
     var selectedTimeButton: ButtonRow?
-    var selectedDate: Date? = Date()
-    var numberOfPeople: Int? = 1
+    var selectedDate: Date = Date()
+    var numberOfPeople: Int = 1
     override func viewDidLoad() {
         print("username: \(AppDelegate.username)")
         super.viewDidLoad()
@@ -27,7 +27,7 @@ class ReserveVC: FormViewController {
                 cell.textLabel?.textColor = UIColor(red: 143/255, green: 27/255, blue: 85/255, alpha: 1)
                 cell.detailTextLabel?.textColor =  UIColor(red: 143/255, green: 27/255, blue: 85/255, alpha: 1)
             }.onChange { [weak self] row in
-                self?.selectedDate = row.value
+                self?.selectedDate = row.value ?? Date()
             }
         }
         form +++ Section("Select Time") {
@@ -132,19 +132,23 @@ class ReserveVC: FormViewController {
         print(numberOfPeople as Any)
         if(selectedTimeButton?.title == nil){
             let alertController = UIAlertController(title: "Error", message: "Please select a time", preferredStyle: .alert)
-              let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-              alertController.addAction(okAction)
-              present(alertController, animated: true, completion: nil)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertController.addAction(okAction)
+            present(alertController, animated: true, completion: nil)
         }
-        // Access date, time, and number of people
-        if let selectedDate = values["Select Date"] as? Date,
-           let numberOfPeople = values["Number of People"] as? Int {
-            // Perform reservation logic here
-            print("Reservation Date: \(selectedDate)")
-            print("Number of People: \(numberOfPeople)")
-            
+        else{
+            performSegue(withIdentifier: "reserveTable", sender: self)
         }
-        performSegue(withIdentifier: "reserveTable", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "reserveTable"{
+            if let navigationController = segue.destination as? UINavigationController,
+               let tableBookingVC = navigationController.topViewController as? TableBookingVC {
+                tableBookingVC.selectedDate = selectedDate
+                tableBookingVC.selectedTime = selectedTimeButton?.title ?? "7:00 PM"
+                tableBookingVC.numberOfPeople = numberOfPeople
+            }
+        }
     }
 
 }
