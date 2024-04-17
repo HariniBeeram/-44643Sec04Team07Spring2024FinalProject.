@@ -31,8 +31,6 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
     
     @IBAction func makeReservation(_ sender: Any) {
         var reservedTables: [String] = []
-        
-        
         for nodeName in tableNodes{
             if let tableNode = imgView.scene?.rootNode.childNode(withName: nodeName, recursively: true)
             {
@@ -80,8 +78,6 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
         }
         
         dateFormatter.dateFormat = "yyyy-MM-dd"
-        let documentID = dateFormatter.string(from: selectedDate) + "_" + selectedTime
-        
         db.collection("Table_Reservation").getDocuments { (querySnapshot, error) in
             if let error = error {
                 print("Error fetching document IDs: \(error.localizedDescription)")
@@ -122,10 +118,8 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
                 }
             }
             self.setReservation(scene: scene)
-            
         }
     }
-    
     
     func setReservation(scene: SCNScene){
        
@@ -134,7 +128,9 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
         imgView.autoenablesDefaultLighting = true
         imgView.isUserInteractionEnabled = true
         imgView.allowsCameraControl = true
-        imgView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 2)
+       // imgView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width/2, height: UIScreen.main.bounds.height )
+        
+        //imgView.frame = UIScreen.main.bounds
         print("scene\(scene)")
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         imgView.addGestureRecognizer(tapGesture)

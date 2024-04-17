@@ -47,6 +47,8 @@
 		325DC75A2BCC98CB00D09805 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 325DC7592BCC98CB00D09805 /* FirebaseRemoteConfigSwift */; };
 		325DC75C2BCC98CB00D09805 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 325DC75B2BCC98CB00D09805 /* FirebaseStorage */; };
 		325DC75E2BCC98CB00D09805 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 325DC75D2BCC98CB00D09805 /* FirebaseStorageCombine-Community */; };
+		325DC7612BCF15A400D09805 /* FoodCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325DC75F2BCF15A400D09805 /* FoodCategoryCell.swift */; };
+		325DC7622BCF15A400D09805 /* FoodCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 325DC7602BCF15A400D09805 /* FoodCategoryCell.xib */; };
 		328D840C2BCB2400003E1B87 /* restaurantLayout2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 328D840B2BCB2400003E1B87 /* restaurantLayout2.usdz */; };
 		328D840E2BCB2638003E1B87 /* cafe_interior.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 328D840D2BCB2637003E1B87 /* cafe_interior.usdz */; };
 		328D84102BCB2795003E1B87 /* restaurant3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 328D840F2BCB2795003E1B87 /* restaurant3.usdz */; };
@@ -94,6 +96,8 @@
 		2C0C436A2BC986260069D6D8 /* TableBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableBookingVC.swift; sourceTree = "<group>"; };
 		320BC7262BC7B728000626DD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		320BC7282BCA09F1000626DD /* Restaurant.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Restaurant.dae; sourceTree = "<group>"; };
+		325DC75F2BCF15A400D09805 /* FoodCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryCell.swift; sourceTree = "<group>"; };
+		325DC7602BCF15A400D09805 /* FoodCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCategoryCell.xib; sourceTree = "<group>"; };
 		328D840B2BCB2400003E1B87 /* restaurantLayout2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = restaurantLayout2.usdz; sourceTree = "<group>"; };
 		328D840D2BCB2637003E1B87 /* cafe_interior.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cafe_interior.usdz; sourceTree = "<group>"; };
 		328D840F2BCB2795003E1B87 /* restaurant3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = restaurant3.usdz; sourceTree = "<group>"; };
@@ -197,6 +201,8 @@
 				328D840D2BCB2637003E1B87 /* cafe_interior.usdz */,
 				328D840B2BCB2400003E1B87 /* restaurantLayout2.usdz */,
 				328D840F2BCB2795003E1B87 /* restaurant3.usdz */,
+				325DC75F2BCF15A400D09805 /* FoodCategoryCell.swift */,
+				325DC7602BCF15A400D09805 /* FoodCategoryCell.xib */,
 			);
 			path = "SHA-STORY";
 			sourceTree = "<group>";
@@ -392,6 +398,7 @@
 				320BC7292BCA09F1000626DD /* Restaurant.dae in Resources */,
 				328D840E2BCB2638003E1B87 /* cafe_interior.usdz in Resources */,
 				328D84102BCB2795003E1B87 /* restaurant3.usdz in Resources */,
+				325DC7622BCF15A400D09805 /* FoodCategoryCell.xib in Resources */,
 				2221F7F52B83F4300056A1E2 /* LaunchScreen.storyboard in Resources */,
 				32C006BD2B9BCB3A0037AD31 /* GoogleService-Info.plist in Resources */,
 				2221F7F22B83F4300056A1E2 /* Assets.xcassets in Resources */,
@@ -426,6 +433,7 @@
 				2221F7ED2B83F42F0056A1E2 /* SHA_STORY.swift in Sources */,
 				2221F7E92B83F42F0056A1E2 /* AppDelegate.swift in Sources */,
 				328D84152BCB8454003E1B87 /* HomeVC.swift in Sources */,
+				325DC7612BCF15A400D09805 /* FoodCategoryCell.swift in Sources */,
 				328D84172BCC793F003E1B87 /* RegistrationVC.swift in Sources */,
 				320BC7272BC7B728000626DD /* LoginVC.swift in Sources */,
 				2221F7EB2B83F42F0056A1E2 /* SceneDelegate.swift in Sources */,

@@ -222,8 +222,8 @@
             filePath = "SHA-STORY/ViewController/TableBookingVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -285,8 +285,8 @@
             filePath = "SHA-STORY/ViewController/TableBookingVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "setReservation(scene:)"
             landmarkType = "7">
             <Locations>
@@ -348,8 +348,8 @@
             filePath = "SHA-STORY/ViewController/TableBookingVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "setReservation(scene:)"
             landmarkType = "7">
             <Locations>
@@ -389,54 +389,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "241FA2F4-425D-4A12-A379-0C1429ADBBD2"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SHA-STORY/ViewController/TableBookingVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
-            landmarkName = "handleTap(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "241FA2F4-425D-4A12-A379-0C1429ADBBD2 - 49fc7a55cace73da"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SHA_STORY.TableBookingVC.handleTap(__C.UITapGestureRecognizer) -&gt; ()"
-                  moduleName = "SHA-STORY"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sai/Desktop/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/TableBookingVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "104"
-                  endingLineNumber = "104"
-                  offsetFromSymbolStart = "1092">
-               </Location>
-               <Location
-                  uuid = "241FA2F4-425D-4A12-A379-0C1429ADBBD2 - 49fc7a55cace73da"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SHA_STORY.TableBookingVC.handleTap(__C.UITapGestureRecognizer) -&gt; ()"
-                  moduleName = "SHA-STORY"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sai/Desktop/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/TableBookingVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "104"
-                  endingLineNumber = "104"
-                  offsetFromSymbolStart = "1616">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "B16648D5-A91D-410C-93A1-A1D49845255B"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -444,58 +396,10 @@
             filePath = "SHA-STORY/ViewController/TableBookingVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "setReservation(scene:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F980F513-0BAA-4BC4-9B24-7700DE186AA4"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SHA-STORY/ViewController/TableBookingVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
-            landmarkName = "handleTap(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F980F513-0BAA-4BC4-9B24-7700DE186AA4 - 49fc7a55cace4dcc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SHA_STORY.TableBookingVC.handleTap(__C.UITapGestureRecognizer) -&gt; ()"
-                  moduleName = "SHA-STORY"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sai/Desktop/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/TableBookingVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "150"
-                  endingLineNumber = "150"
-                  offsetFromSymbolStart = "2760">
-               </Location>
-               <Location
-                  uuid = "F980F513-0BAA-4BC4-9B24-7700DE186AA4 - 49fc7a55cace4dcc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SHA_STORY.TableBookingVC.handleTap(__C.UITapGestureRecognizer) -&gt; ()"
-                  moduleName = "SHA-STORY"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sai/Desktop/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/TableBookingVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "150"
-                  endingLineNumber = "150"
-                  offsetFromSymbolStart = "2096">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -508,8 +412,8 @@
             filePath = "SHA-STORY/ViewController/TableBookingVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
             landmarkName = "handleTap(_:)"
             landmarkType = "7">
             <Locations>
@@ -556,8 +460,8 @@
             filePath = "SHA-STORY/ViewController/TableBookingVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -619,8 +523,8 @@
             filePath = "SHA-STORY/ViewController/TableBookingVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -697,8 +601,8 @@
             filePath = "SHA-STORY/ViewController/TableBookingVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "222"
-            endingLineNumber = "222"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
             landmarkName = "handleTableSelection(date:time:tables:)"
             landmarkType = "7">
             <Locations>
@@ -745,8 +649,8 @@
             filePath = "SHA-STORY/ViewController/TableBookingVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -838,8 +742,8 @@
             filePath = "SHA-STORY/ViewController/TableBookingVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -888,6 +792,36 @@
                   endingLineNumber = "108"
                   offsetFromSymbolStart = "6244">
                </Location>
+               <Location
+                  uuid = "E1627170-3285-4BBE-8970-E652141E5023 - d3c78c6cd408fb67"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SHA_STORY.TableBookingVC.viewDidLoad() -&gt; ()"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sai/Desktop/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/TableBookingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "7232">
+               </Location>
+               <Location
+                  uuid = "E1627170-3285-4BBE-8970-E652141E5023 - d3c78c6cd408fb67"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SHA_STORY.TableBookingVC.viewDidLoad() -&gt; ()"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sai/Desktop/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/TableBookingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "7436">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -901,8 +835,8 @@
             filePath = "SHA-STORY/ViewController/TableBookingVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -949,8 +883,8 @@
             filePath = "SHA-STORY/ViewController/TableBookingVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -965,8 +899,8 @@
             filePath = "SHA-STORY/ViewController/TableBookingVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -981,8 +915,8 @@
             filePath = "SHA-STORY/ViewController/TableBookingVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -1045,6 +979,54 @@
                   startingLineNumber = "113"
                   endingLineNumber = "113"
                   offsetFromSymbolStart = "6972">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8B9A44C4-3D84-41E9-8796-AD9ECBA0C161"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SHA-STORY/ViewController/TableBookingVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8B9A44C4-3D84-41E9-8796-AD9ECBA0C161 - d3c78c6cd408fb40"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SHA_STORY.TableBookingVC.viewDidLoad() -&gt; ()"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sai/Desktop/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/TableBookingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "7460">
+               </Location>
+               <Location
+                  uuid = "8B9A44C4-3D84-41E9-8796-AD9ECBA0C161 - d3c78c6cd408fb40"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SHA_STORY.TableBookingVC.viewDidLoad() -&gt; ()"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sai/Desktop/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/TableBookingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "7632">
                </Location>
             </Locations>
          </BreakpointContent>
