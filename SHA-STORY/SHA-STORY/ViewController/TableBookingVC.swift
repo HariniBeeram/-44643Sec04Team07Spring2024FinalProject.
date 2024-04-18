@@ -128,9 +128,6 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
         imgView.autoenablesDefaultLighting = true
         imgView.isUserInteractionEnabled = true
         imgView.allowsCameraControl = true
-       // imgView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width/2, height: UIScreen.main.bounds.height )
-        
-        //imgView.frame = UIScreen.main.bounds
         print("scene\(scene)")
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         imgView.addGestureRecognizer(tapGesture)
@@ -191,8 +188,6 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
             // Iterate through each document
             for document in documents {
                 let docID = document.documentID
-                
-                // Check if the user has already reserved a table for this document ID
                 if let username = document.data()["username"] as? String, username == self.username {
                     userHasReservation = true
                     existingDocumentID = docID

@@ -70,7 +70,7 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         
         guard let categoryCell = cell as? FoodCategoryCell else {return cell}
         categoryCell.foodItem.text =  fooditem.name
-        categoryCell.foodPrice.text = String(fooditem.price)
+        categoryCell.foodPrice.text = "$ " + String(fooditem.price)
         if let url = URL(string: fooditem.imgUrl){
             categoryCell.foodPicture.sd_setImage(with: url,placeholderImage: UIImage(named:"placeholder"))
         }
@@ -83,25 +83,67 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         collectionView.dataSource = self
         collectionView.delegate = self
         self.collectionView.collectionViewLayout = UICollectionViewFlowLayout()
+            collectionView.reloadData()
         Task {
             await fetchFoodItems()
             
         }
         
+        
     }
     
      func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "showFoodDesc", sender: self)
+        self.performSegue(withIdentifier: "showFoodDesc", sender: indexPath)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showFoodDesc",
+            let navigationController = segue.destination as? UINavigationController,
+           let destinationVC = navigationController.topViewController as? FoodItemDetailVC{
+            if let indexPath = sender as? IndexPath{
+                switch indexPath.section {
+                case 0:
+                    fooditem.id = appetizers[indexPath.row].id
+                    fooditem.imgUrl = appetizers[indexPath.row].imgUrl
+                    fooditem.name = appetizers[indexPath.row].name
+                    fooditem.type = appetizers[indexPath.row].type
+                    fooditem.price = appetizers[indexPath.row].price
+                    fooditem.description = appetizers[indexPath.row].description
+                case 1:
+                    fooditem.id = mainCourse[indexPath.row].id
+                    fooditem.imgUrl = mainCourse[indexPath.row].imgUrl
+                    fooditem.name = mainCourse[indexPath.row].name
+                    fooditem.type = mainCourse[indexPath.row].type
+                    fooditem.price = mainCourse[indexPath.row].price
+                    fooditem.description = mainCourse[indexPath.row].description
+                case 2:
+                    fooditem.id = beverages[indexPath.row].id
+                    fooditem.imgUrl = beverages[indexPath.row].imgUrl
+                    fooditem.name = beverages[indexPath.row].name
+                    fooditem.type = beverages[indexPath.row].type
+                    fooditem.price = beverages[indexPath.row].price
+                    fooditem.description = beverages[indexPath.row].description
+                default:
+                    break
+                }
+                destinationVC.itemDesc = fooditem.description
+                destinationVC.itemPrice =  fooditem.price
+                destinationVC.header = fooditem.name
+                destinationVC.itemImgUrl = fooditem.imgUrl
+//                if let url = URL(string: fooditem.imgUrl){
+//                    destinationVC.imgUrl.sd_setImage(with: url,placeholderImage: UIImage(named:"placeholder"))
+//                }
+                
+            }}
     }
     private func fetchFoodItems() async {
         await shared.fetchFoodItems()
         appetizers = shared.appetizersItems
         mainCourse = shared.mainCourseItems
         beverages = shared.beveragesItems
-        
         self.collectionView.collectionViewLayout = self.layout()
-        collectionView.reloadData()
-        collectionView.reloadSections(IndexSet(integersIn: 0..<collectionView.numberOfSections))
+       collectionView.reloadData()
+       collectionView.reloadSections(IndexSet(integersIn: 0..<collectionView.numberOfSections))
       
         
     }
@@ -126,7 +168,7 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .continuous
-        section.interGroupSpacing = insetSize*2.0
+        section.interGroupSpacing = insetSize*4.0
         section.contentInsets = NSDirectionalEdgeInsets(top: insetSize, leading: insetSize, bottom: insetSize, trailing: insetSize)
         section.boundarySupplementaryItems = [self.supplementaryHeaderItem()]
         return section
@@ -144,12 +186,13 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
         let config = UICollectionViewCompositionalLayoutConfiguration()
         config.scrollDirection = .vertical
         config.contentInsetsReference = .automatic
-        config.interSectionSpacing = insetSize * 2.0
+        config.interSectionSpacing = insetSize * 4.0
         return layout
     }
     
+    
      func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerCell", for: indexPath)
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerCell1", for: indexPath)
         switch kind{
         case UICollectionView.elementKindSectionHeader:
             guard let headerView = headerView as? headerCell else{

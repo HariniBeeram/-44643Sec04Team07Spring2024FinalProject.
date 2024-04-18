@@ -412,8 +412,8 @@
             filePath = "SHA-STORY/ViewController/TableBookingVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
             landmarkName = "handleTap(_:)"
             landmarkType = "7">
             <Locations>
@@ -601,8 +601,8 @@
             filePath = "SHA-STORY/ViewController/TableBookingVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "214"
-            endingLineNumber = "214"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
             landmarkName = "handleTableSelection(date:time:tables:)"
             landmarkType = "7">
             <Locations>
@@ -1034,22 +1034,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7BEA573B-3095-4455-80C9-8A877B13FBBD"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SHA-STORY/ViewController/HomeVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "fetchFoodItems()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "CF76BD25-8740-4708-BAF8-026D6FDD18F2"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -1122,8 +1106,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
             endingLineNumber = "38"
-            landmarkName = "FoodItem"
-            landmarkType = "14">
+            landmarkName = "init?(data:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "00A4F5B3-183A-4035-B06B-AF4E052C35EE - f61c4cc05a2dd76f"
@@ -1184,8 +1168,8 @@
             filePath = "SHA-STORY/ViewController/HomeVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
             landmarkName = "getLayout(for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1200,8 +1184,8 @@
             filePath = "SHA-STORY/ViewController/HomeVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
+            startingLineNumber = "203"
+            endingLineNumber = "203"
             landmarkName = "collectionView(_:viewForSupplementaryElementOfKind:at:)"
             landmarkType = "7">
             <Locations>
@@ -1235,6 +1219,36 @@
                   endingLineNumber = "163"
                   offsetFromSymbolStart = "1000">
                </Location>
+               <Location
+                  uuid = "1E51B470-56BC-40B7-8F3B-E7DB5F4FF7DE - cc23046b61b7520a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SHA_STORY.HomeVC.collectionView(_: __C.UICollectionView, viewForSupplementaryElementOfKind: Swift.String, at: Foundation.IndexPath) -&gt; __C.UICollectionReusableView"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sai/Desktop/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/HomeVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "203"
+                  endingLineNumber = "203"
+                  offsetFromSymbolStart = "1360">
+               </Location>
+               <Location
+                  uuid = "1E51B470-56BC-40B7-8F3B-E7DB5F4FF7DE - cc23046b61b7520a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SHA_STORY.HomeVC.collectionView(_: __C.UICollectionView, viewForSupplementaryElementOfKind: Swift.String, at: Foundation.IndexPath) -&gt; __C.UICollectionReusableView"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sai/Desktop/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/HomeVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "203"
+                  endingLineNumber = "203"
+                  offsetFromSymbolStart = "1000">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -1248,10 +1262,42 @@
             filePath = "SHA-STORY/ViewController/HomeVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
             landmarkName = "collectionView(_:viewForSupplementaryElementOfKind:at:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "13748357-2FA6-40E7-A570-B7EBD7FE0E64 - cc23046b61b75102"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SHA_STORY.HomeVC.collectionView(_: __C.UICollectionView, viewForSupplementaryElementOfKind: Swift.String, at: Foundation.IndexPath) -&gt; __C.UICollectionReusableView"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sai/Desktop/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/HomeVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "195"
+                  endingLineNumber = "195"
+                  offsetFromSymbolStart = "688">
+               </Location>
+               <Location
+                  uuid = "13748357-2FA6-40E7-A570-B7EBD7FE0E64 - cc23046b61b75102"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SHA_STORY.HomeVC.collectionView(_: __C.UICollectionView, viewForSupplementaryElementOfKind: Swift.String, at: Foundation.IndexPath) -&gt; __C.UICollectionReusableView"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sai/Desktop/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/HomeVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "195"
+                  endingLineNumber = "195"
+                  offsetFromSymbolStart = "312">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1264,8 +1310,8 @@
             filePath = "SHA-STORY/ViewController/HomeVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
             landmarkName = "getLayout(for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1280,10 +1326,216 @@
             filePath = "SHA-STORY/ViewController/HomeVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
             landmarkName = "layout()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "43284078-9389-41D3-BC1F-EBBB69559266"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SHA-STORY/ViewController/HomeVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83BFDCBD-EB05-49D2-9CD9-79B05AF2AFD3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SHA-STORY/ViewController/HomeVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "83BFDCBD-EB05-49D2-9CD9-79B05AF2AFD3 - 9344c6d9a85c1090"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SHA_STORY.HomeVC.prepare(for: __C.UIStoryboardSegue, sender: Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sai/Desktop/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/HomeVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "1524">
+               </Location>
+               <Location
+                  uuid = "83BFDCBD-EB05-49D2-9CD9-79B05AF2AFD3 - 9344c6d9a85c1090"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SHA_STORY.HomeVC.prepare(for: __C.UIStoryboardSegue, sender: Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sai/Desktop/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/HomeVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "1660">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35D01E46-1080-460E-9228-2B541800FE14"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SHA-STORY/ViewController/HomeVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9CFD096-F51A-4525-8F05-0A44B6F4D937"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SHA-STORY/ViewController/HomeVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D9CFD096-F51A-4525-8F05-0A44B6F4D937 - 9344c6d9a85c10f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SHA_STORY.HomeVC.prepare(for: __C.UIStoryboardSegue, sender: Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sai/Desktop/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/HomeVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "1008">
+               </Location>
+               <Location
+                  uuid = "D9CFD096-F51A-4525-8F05-0A44B6F4D937 - 9344c6d9a85c10f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SHA_STORY.HomeVC.prepare(for: __C.UIStoryboardSegue, sender: Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sai/Desktop/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/HomeVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "1168">
+               </Location>
+               <Location
+                  uuid = "D9CFD096-F51A-4525-8F05-0A44B6F4D937 - 9344c6d9a85c10f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SHA_STORY.HomeVC.prepare(for: __C.UIStoryboardSegue, sender: Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sai/Desktop/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/HomeVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "1024">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CA8C09F8-26A3-4647-ADAA-A1C5408E62C6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SHA-STORY/ViewController/HomeVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CA8C09F8-26A3-4647-ADAA-A1C5408E62C6 - 9344c6d9a85c10b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SHA_STORY.HomeVC.prepare(for: __C.UIStoryboardSegue, sender: Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sai/Desktop/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/HomeVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "1428">
+               </Location>
+               <Location
+                  uuid = "CA8C09F8-26A3-4647-ADAA-A1C5408E62C6 - 9344c6d9a85c10b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SHA_STORY.HomeVC.prepare(for: __C.UIStoryboardSegue, sender: Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sai/Desktop/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/HomeVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "1416">
+               </Location>
+               <Location
+                  uuid = "CA8C09F8-26A3-4647-ADAA-A1C5408E62C6 - 9344c6d9a85c10b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SHA_STORY.HomeVC.prepare(for: __C.UIStoryboardSegue, sender: Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sai/Desktop/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/HomeVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "1648">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

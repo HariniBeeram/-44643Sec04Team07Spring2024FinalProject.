@@ -9,7 +9,7 @@ import UIKit
 import Firebase
 
 class LoginVC: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -42,7 +42,7 @@ class LoginVC: UIViewController {
                 let tapBarController = self?.storyboard?.instantiateViewController(identifier: "shaStoryTapBar") as? UITabBarController
                 self!.view.window?.rootViewController = tapBarController
                 self!.view.window?.makeKeyAndVisible()
-          
+                
                 
             }
         }
