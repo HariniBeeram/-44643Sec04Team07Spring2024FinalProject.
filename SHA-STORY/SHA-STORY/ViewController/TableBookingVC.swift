@@ -174,10 +174,6 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
             "username": self.username
             
         ]
-        
-        
-        
-        
         db.collection("Table_Reservation").getDocuments { (querySnapshot, error) in
             if let error = error {
                 print("Error fetching document IDs: \(error.localizedDescription)")

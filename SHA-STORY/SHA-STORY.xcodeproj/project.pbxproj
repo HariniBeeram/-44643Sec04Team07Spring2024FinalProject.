@@ -48,7 +48,10 @@
 		325DC75C2BCC98CB00D09805 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 325DC75B2BCC98CB00D09805 /* FirebaseStorage */; };
 		325DC75E2BCC98CB00D09805 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 325DC75D2BCC98CB00D09805 /* FirebaseStorageCombine-Community */; };
 		325DC7612BCF15A400D09805 /* FoodCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325DC75F2BCF15A400D09805 /* FoodCategoryCell.swift */; };
-		325DC7622BCF15A400D09805 /* FoodCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 325DC7602BCF15A400D09805 /* FoodCategoryCell.xib */; };
+		325DC7642BD0C59800D09805 /* FoodItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325DC7632BD0C59800D09805 /* FoodItemModel.swift */; };
+		325DC7672BD0EE4C00D09805 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 325DC7662BD0EE4C00D09805 /* SDWebImage */; };
+		325DC7692BD0EE4C00D09805 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 325DC7682BD0EE4C00D09805 /* SDWebImageMapKit */; };
+		325DC76B2BD0F33500D09805 /* headerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325DC76A2BD0F33500D09805 /* headerCell.swift */; };
 		328D840C2BCB2400003E1B87 /* restaurantLayout2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 328D840B2BCB2400003E1B87 /* restaurantLayout2.usdz */; };
 		328D840E2BCB2638003E1B87 /* cafe_interior.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 328D840D2BCB2637003E1B87 /* cafe_interior.usdz */; };
 		328D84102BCB2795003E1B87 /* restaurant3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 328D840F2BCB2795003E1B87 /* restaurant3.usdz */; };
@@ -97,7 +100,8 @@
 		320BC7262BC7B728000626DD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		320BC7282BCA09F1000626DD /* Restaurant.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Restaurant.dae; sourceTree = "<group>"; };
 		325DC75F2BCF15A400D09805 /* FoodCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryCell.swift; sourceTree = "<group>"; };
-		325DC7602BCF15A400D09805 /* FoodCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCategoryCell.xib; sourceTree = "<group>"; };
+		325DC7632BD0C59800D09805 /* FoodItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemModel.swift; sourceTree = "<group>"; };
+		325DC76A2BD0F33500D09805 /* headerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = headerCell.swift; sourceTree = "<group>"; };
 		328D840B2BCB2400003E1B87 /* restaurantLayout2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = restaurantLayout2.usdz; sourceTree = "<group>"; };
 		328D840D2BCB2637003E1B87 /* cafe_interior.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cafe_interior.usdz; sourceTree = "<group>"; };
 		328D840F2BCB2795003E1B87 /* restaurant3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = restaurant3.usdz; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 				325DC75C2BCC98CB00D09805 /* FirebaseStorage in Frameworks */,
 				325DC7562BCC98CB00D09805 /* FirebasePerformance in Frameworks */,
 				325DC7422BCC98CB00D09805 /* FirebaseFirestore in Frameworks */,
+				325DC7692BD0EE4C00D09805 /* SDWebImageMapKit in Frameworks */,
 				320594F92B87042E00650A92 /* AnimatedGradientView in Frameworks */,
 				325DC74C2BCC98CB00D09805 /* FirebaseInAppMessaging-Beta in Frameworks */,
 				C7045F302B884B8B0033D7C7 /* Lottie in Frameworks */,
@@ -137,6 +142,7 @@
 				325DC7482BCC98CB00D09805 /* FirebaseFunctions in Frameworks */,
 				325DC7302BCC98CB00D09805 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				325DC75E2BCC98CB00D09805 /* FirebaseStorageCombine-Community in Frameworks */,
+				325DC7672BD0EE4C00D09805 /* SDWebImage in Frameworks */,
 				325DC7442BCC98CB00D09805 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				325DC72A2BCC98CB00D09805 /* FirebaseAnalytics in Frameworks */,
 				325DC73A2BCC98CB00D09805 /* FirebaseCrashlytics in Frameworks */,
@@ -202,7 +208,8 @@
 				328D840B2BCB2400003E1B87 /* restaurantLayout2.usdz */,
 				328D840F2BCB2795003E1B87 /* restaurant3.usdz */,
 				325DC75F2BCF15A400D09805 /* FoodCategoryCell.swift */,
-				325DC7602BCF15A400D09805 /* FoodCategoryCell.xib */,
+				325DC7632BD0C59800D09805 /* FoodItemModel.swift */,
+				325DC76A2BD0F33500D09805 /* headerCell.swift */,
 			);
 			path = "SHA-STORY";
 			sourceTree = "<group>";
@@ -300,6 +307,8 @@
 				325DC7592BCC98CB00D09805 /* FirebaseRemoteConfigSwift */,
 				325DC75B2BCC98CB00D09805 /* FirebaseStorage */,
 				325DC75D2BCC98CB00D09805 /* FirebaseStorageCombine-Community */,
+				325DC7662BD0EE4C00D09805 /* SDWebImage */,
+				325DC7682BD0EE4C00D09805 /* SDWebImageMapKit */,
 			);
 			productName = "SHA-STORY";
 			productReference = 2221F7E52B83F42F0056A1E2 /* SHA-STORY.app */;
@@ -378,6 +387,7 @@
 				C7045F2E2B884B8B0033D7C7 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				32DDD7242BB51EBD00827EAA /* XCRemoteSwiftPackageReference "Eureka" */,
 				325DC7282BCC98CB00D09805 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				325DC7652BD0EE4C00D09805 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 2221F7E62B83F42F0056A1E2 /* Products */;
 			projectDirPath = "";
@@ -398,7 +408,6 @@
 				320BC7292BCA09F1000626DD /* Restaurant.dae in Resources */,
 				328D840E2BCB2638003E1B87 /* cafe_interior.usdz in Resources */,
 				328D84102BCB2795003E1B87 /* restaurant3.usdz in Resources */,
-				325DC7622BCF15A400D09805 /* FoodCategoryCell.xib in Resources */,
 				2221F7F52B83F4300056A1E2 /* LaunchScreen.storyboard in Resources */,
 				32C006BD2B9BCB3A0037AD31 /* GoogleService-Info.plist in Resources */,
 				2221F7F22B83F4300056A1E2 /* Assets.xcassets in Resources */,
@@ -433,9 +442,11 @@
 				2221F7ED2B83F42F0056A1E2 /* SHA_STORY.swift in Sources */,
 				2221F7E92B83F42F0056A1E2 /* AppDelegate.swift in Sources */,
 				328D84152BCB8454003E1B87 /* HomeVC.swift in Sources */,
+				325DC76B2BD0F33500D09805 /* headerCell.swift in Sources */,
 				325DC7612BCF15A400D09805 /* FoodCategoryCell.swift in Sources */,
 				328D84172BCC793F003E1B87 /* RegistrationVC.swift in Sources */,
 				320BC7272BC7B728000626DD /* LoginVC.swift in Sources */,
+				325DC7642BD0C59800D09805 /* FoodItemModel.swift in Sources */,
 				2221F7EB2B83F42F0056A1E2 /* SceneDelegate.swift in Sources */,
 				2C0C436B2BC986260069D6D8 /* TableBookingVC.swift in Sources */,
 				32DDD7282BB520B300827EAA /* ReserveVC.swift in Sources */,
@@ -797,6 +808,14 @@
 				minimumVersion = 10.24.0;
 			};
 		};
+		325DC7652BD0EE4C00D09805 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.1;
+			};
+		};
 		32DDD7242BB51EBD00827EAA /* XCRemoteSwiftPackageReference "Eureka" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/xmartlabs/Eureka.git";
@@ -955,6 +974,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 325DC7282BCC98CB00D09805 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		325DC7662BD0EE4C00D09805 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 325DC7652BD0EE4C00D09805 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		325DC7682BD0EE4C00D09805 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 325DC7652BD0EE4C00D09805 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
 		};
 		32DDD7252BB51EBD00827EAA /* Eureka */ = {
 			isa = XCSwiftPackageProductDependency;
