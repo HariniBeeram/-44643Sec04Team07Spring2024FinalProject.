@@ -75,6 +75,7 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
             categoryCell.foodPicture.sd_setImage(with: url,placeholderImage: UIImage(named:"placeholder"))
         }
         
+        
         return categoryCell
     }
 
@@ -130,9 +131,8 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
                 destinationVC.itemPrice =  fooditem.price
                 destinationVC.header = fooditem.name
                 destinationVC.itemImgUrl = fooditem.imgUrl
-//                if let url = URL(string: fooditem.imgUrl){
-//                    destinationVC.imgUrl.sd_setImage(with: url,placeholderImage: UIImage(named:"placeholder"))
-//                }
+                destinationVC.itemId = fooditem.id
+
                 
             }}
     }

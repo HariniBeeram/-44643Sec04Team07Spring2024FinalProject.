@@ -7,6 +7,14 @@
 
 import Foundation
 import Firebase
+
+struct CartItem {
+    var name: String
+    var price: Int
+    var imgUrl: String
+    var id: String
+    var count: Int
+}
 struct FoodItem {
     var id: String
     var type: String

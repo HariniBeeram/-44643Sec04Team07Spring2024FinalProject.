@@ -22,6 +22,7 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
     let reservingColor = UIColor.green
     let originalColor = UIColor.brown
     var tableNodes:[String] = ["Object_20","Object_124","Object_98","Object_194","Object_150","Object_72","Object_592","Object_615","Object_46"]
+    var dineInSelected:Bool = false
     
     
     @IBAction func navigateToReserve(_ sender: UIBarButtonItem) {
@@ -202,7 +203,7 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
                     } else {
                         self.showAlertAndNavigateToHome()
                     }
-                }
+                } 
             }
             else {
                 let uuid = UUID().uuidString
@@ -220,11 +221,18 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
     
     func showAlertAndNavigateToHome() {
         let alertController = UIAlertController(title: "Success", message: "Table booked successfully!", preferredStyle: .alert)
-          let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-              self.dismiss(animated: true, completion: nil) // Dismiss the current view controller
-          }
-          alertController.addAction(okAction)
-          present(alertController, animated: true, completion: nil)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            if self.dineInSelected == true{
+                // Navigate to orders
+                self.performSegue(withIdentifier: "dineIn", sender: self)
+               
+                }
+            else {
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
     }
     
     

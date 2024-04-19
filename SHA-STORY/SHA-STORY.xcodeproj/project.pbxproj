@@ -63,6 +63,8 @@
 		32C006BD2B9BCB3A0037AD31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32C006BC2B9BCB3A0037AD31 /* GoogleService-Info.plist */; };
 		32DDD7262BB51EBD00827EAA /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = 32DDD7252BB51EBD00827EAA /* Eureka */; };
 		32DDD7282BB520B300827EAA /* ReserveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDD7272BB520B300827EAA /* ReserveVC.swift */; };
+		32E7A2582BD206AE00F0B68B /* cartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E7A2572BD206AE00F0B68B /* cartVC.swift */; };
+		32E7A25A2BD20BE000F0B68B /* itemCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E7A2592BD20BE000F0B68B /* itemCellTableViewCell.swift */; };
 		C7045F302B884B8B0033D7C7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C7045F2F2B884B8B0033D7C7 /* Lottie */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +115,8 @@
 		32B7D12D2BCA222600A9F2E2 /* room.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = room.usdz; sourceTree = "<group>"; };
 		32C006BC2B9BCB3A0037AD31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		32DDD7272BB520B300827EAA /* ReserveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveVC.swift; sourceTree = "<group>"; };
+		32E7A2572BD206AE00F0B68B /* cartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartVC.swift; sourceTree = "<group>"; };
+		32E7A2592BD20BE000F0B68B /* itemCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +246,8 @@
 				328D84142BCB8454003E1B87 /* HomeVC.swift */,
 				328D84162BCC793F003E1B87 /* RegistrationVC.swift */,
 				325DC76C2BD1709100D09805 /* FoodItemDetailVC.swift */,
+				32E7A2572BD206AE00F0B68B /* cartVC.swift */,
+				32E7A2592BD20BE000F0B68B /* itemCellTableViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -446,6 +452,8 @@
 				2221F7E92B83F42F0056A1E2 /* AppDelegate.swift in Sources */,
 				328D84152BCB8454003E1B87 /* HomeVC.swift in Sources */,
 				325DC76B2BD0F33500D09805 /* headerCell.swift in Sources */,
+				32E7A25A2BD20BE000F0B68B /* itemCellTableViewCell.swift in Sources */,
+				32E7A2582BD206AE00F0B68B /* cartVC.swift in Sources */,
 				325DC7612BCF15A400D09805 /* FoodCategoryCell.swift in Sources */,
 				328D84172BCC793F003E1B87 /* RegistrationVC.swift in Sources */,
 				320BC7272BC7B728000626DD /* LoginVC.swift in Sources */,
