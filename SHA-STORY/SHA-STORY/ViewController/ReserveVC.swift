@@ -13,6 +13,7 @@ class ReserveVC: FormViewController {
     var selectedDate: Date = Date()
     var numberOfPeople: Int = 1
     var dineInSelected:Bool = false
+    var cartItems: [CartItem] = []
     override func viewDidLoad() {
         print("username: \(AppDelegate.username)")
         super.viewDidLoad()
@@ -149,6 +150,7 @@ class ReserveVC: FormViewController {
                 tableBookingVC.selectedTime = selectedTimeButton?.title ?? "7:00 PM"
                 tableBookingVC.numberOfPeople = numberOfPeople
                 tableBookingVC.dineInSelected = dineInSelected
+                tableBookingVC.cartItems = cartItems
             }
         }
     }

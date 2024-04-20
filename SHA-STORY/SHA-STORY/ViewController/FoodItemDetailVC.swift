@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 class FoodItemDetailVC: UIViewController {
-    
+    let username = AppDelegate.username
     @IBOutlet weak var imgUrl: UIImageView!
     
     
@@ -22,7 +22,7 @@ class FoodItemDetailVC: UIViewController {
         let db = Firestore.firestore()
         let ordersCollection = db.collection("orders")
         
-        let documentId = "sairam"
+        let documentId = self.username
         ordersCollection.document(documentId).getDocument { (document, error) in
             if let document = document, document.exists {
                 if var data = document.data(), var cartItems = data["cartItems"] as? [[String: Any]] {

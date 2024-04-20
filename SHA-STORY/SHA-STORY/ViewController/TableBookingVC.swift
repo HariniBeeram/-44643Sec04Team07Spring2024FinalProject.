@@ -23,6 +23,7 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
     let originalColor = UIColor.brown
     var tableNodes:[String] = ["Object_20","Object_124","Object_98","Object_194","Object_150","Object_72","Object_592","Object_615","Object_46"]
     var dineInSelected:Bool = false
+    var cartItems: [CartItem] = []
     
     
     @IBAction func navigateToReserve(_ sender: UIBarButtonItem) {
@@ -162,8 +163,63 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
             }
         }
     }
+    func addOrderToDineInOrders(date: String, time: String,tables:[String]) {
+           // let db = Firestore.firestore()
+        let documentId = self.username
+            db.collection("orders").document(documentId).getDocument { (document, error) in
+                if let document = document, document.exists {
+                    if let data = document.data(), let cartItemsData = data["cartItems"] as? [[String: Any]] {
+                        self.addToDineInOrders(cartItems: cartItemsData,date: date,time: time,tables: tables)
+                        
+                    }
+                } else {
+                    print("Document does not exist")
+                }
+            }
+        }
+    func addToDineInOrders(cartItems: [[String: Any]],date: String, time: String,tables:[String]) {
+      //  let db = Firestore.firestore()
+        let username = AppDelegate.username
+        let reservationData: [String: Any] = [
+            "date": date,
+            "time": time,
+            "reservedTables": tables,
+            "username": username,
+            "cartItems": cartItems
+            
+        ]
+        db.collection("dineInOrders").addDocument(data: reservationData) { error in
+            if let error = error {
+                print("Error adding pickup order: \(error)")
+            } else {
+                print("Pickup order added successfully!")
+                
+                // Clear the cart items after adding the pickup order
+                self.clearCartItems()            }
+        }
+    }
+    func clearCartItems() {
+            //let db = Firestore.firestore()
+        let documentId = self.username // Use the appropriate document ID
+            
+            // Clear the cart items in the "orders" collection
+            db.collection("orders").document(documentId).updateData(["cartItems": []]) { error in
+                if let error = error {
+                    print("Error clearing cart items: \(error)")
+                } else {
+                    
+                    print("Cart items cleared successfully!")
+                }
+            }
+        }
     
     func handleTableSelection(date: String, time: String, tables: [String]) {
+        
+        if dineInSelected == true{
+            
+            self.addOrderToDineInOrders(date: date, time: time, tables: tables)
+            
+        }
         
         let reservationData: [String: Any] = [
             "date": date,
@@ -223,9 +279,11 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
         let alertController = UIAlertController(title: "Success", message: "Table booked successfully!", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
             if self.dineInSelected == true{
-                // Navigate to orders
-                self.performSegue(withIdentifier: "dineIn", sender: self)
-               
+                let tapBarController = self.storyboard?.instantiateViewController(identifier: "shaStoryTapBar") as? UITabBarController
+                self.view.window?.rootViewController = tapBarController
+                self.view.window?.makeKeyAndVisible()
+                
+                
                 }
             else {
                 self.dismiss(animated: true, completion: nil)

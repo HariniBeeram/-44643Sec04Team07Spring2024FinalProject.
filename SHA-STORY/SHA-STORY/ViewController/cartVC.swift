@@ -10,19 +10,31 @@ import Firebase
 class cartVC: UIViewController,UITableViewDelegate,UITableViewDataSource,ItemCellDelegate{
     
     let timeOptions = ["7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM"]
-
+    let username = AppDelegate.username
     
-    @IBOutlet weak var messageLBL: UILabel!
+    @IBOutlet weak var messageLBL: UILabel!{
+        didSet{
+            messageLBL.text = "Cart is Empty"
+        }
+    }
     
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var totalPrice: UILabel!
     
-    @IBOutlet weak var pickUpBtn: UIButton!
+    @IBOutlet weak var pickUpBtn: UIButton!{
+        didSet{
+            pickUpBtn.isEnabled = false
+        }
+    }
     
     
     
-    @IBOutlet weak var dineInBtn: UIButton!
+    @IBOutlet weak var dineInBtn: UIButton!{
+        didSet{
+            dineInBtn.isEnabled = false
+        }
+    }
     
     @IBAction func pickUp(_ sender: UIButton) {
         showAlert(message: "Your order will be ready in 30 minutes.")
@@ -40,7 +52,7 @@ class cartVC: UIViewController,UITableViewDelegate,UITableViewDataSource,ItemCel
         }
     func addOrderToPickupOrders() {
             let db = Firestore.firestore()
-            let documentId = "sairam"
+        let documentId = self.username
             db.collection("orders").document(documentId).getDocument { (document, error) in
                 if let document = document, document.exists {
                     if let data = document.data(), let cartItemsData = data["cartItems"] as? [[String: Any]] {
@@ -54,10 +66,9 @@ class cartVC: UIViewController,UITableViewDelegate,UITableViewDataSource,ItemCel
         
         func addToPickupOrders(cartItems: [[String: Any]]) {
             let db = Firestore.firestore()
-            let username = "sairam"
             let orderedDate = Timestamp(date: Date())
             let pickupOrderData: [String: Any] = [
-                "username": username,
+                "username": self.username,
                 "orderedDate": orderedDate,
                 "cartItems": cartItems
             ]
@@ -82,7 +93,7 @@ class cartVC: UIViewController,UITableViewDelegate,UITableViewDataSource,ItemCel
         }
     func clearCartItems() {
             let db = Firestore.firestore()
-            let documentId = "sairam" // Use the appropriate document ID
+        let documentId = self.username// Use the appropriate document ID
             
             // Clear the cart items in the "orders" collection
             db.collection("orders").document(documentId).updateData(["cartItems": []]) { error in
@@ -100,18 +111,17 @@ class cartVC: UIViewController,UITableViewDelegate,UITableViewDataSource,ItemCel
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showTableReservation",
-            let destinationVC = segue.destination as? ReserveVC
+        let navigationController = segue.destination as? UINavigationController,
+              let destinationVC = navigationController.topViewController as? ReserveVC
             {
             destinationVC.dineInSelected = true
+            destinationVC.cartItems = self.cartItems
                 }
         }
     var cartItems: [CartItem] = []
        
        override func viewDidLoad() {
            super.viewDidLoad()
-           pickUpBtn.isEnabled = true
-           pickUpBtn.isEnabled = true
-           messageLBL.text = ""
            tableView.delegate = self
            tableView.dataSource = self
 
@@ -120,14 +130,11 @@ class cartVC: UIViewController,UITableViewDelegate,UITableViewDataSource,ItemCel
        }
     override func viewWillAppear(_ animated: Bool) {
          super.viewWillAppear(animated)
-        pickUpBtn.isEnabled = true
-        dineInBtn.isEnabled = true
-        messageLBL.text = ""
          fetchCartItems()
      }
        func fetchCartItems() {
            let db = Firestore.firestore()
-           let documentId = "sairam"
+           let documentId = self.username
            
            db.collection("orders").document(documentId).getDocument { (document, error) in
                if let document = document, document.exists {
@@ -154,11 +161,11 @@ class cartVC: UIViewController,UITableViewDelegate,UITableViewDataSource,ItemCel
        func updateTotalPrice() {
            let totalPriceCart = cartItems.reduce(0) { $0 + ($1.price * $1.count) }
            totalPrice.text = "$\(totalPriceCart)"
-           if(totalPrice.text == "$0")
+           if(totalPrice.text != "$0")
            {
-               self.pickUpBtn.isEnabled = false
-               self.dineInBtn.isEnabled = false
-               self.messageLBL.text = "Cart is empty"
+               self.pickUpBtn.isEnabled = true
+               self.dineInBtn.isEnabled = true
+               self.messageLBL.text = ""
            }
        }
        
@@ -182,7 +189,7 @@ class cartVC: UIViewController,UITableViewDelegate,UITableViewDataSource,ItemCel
        
        func updateCartItemInDatabase(at indexPath: IndexPath, with newValue: Int) {
            let db = Firestore.firestore()
-           let documentId = "sairam"
+           let documentId = self.username
            
            db.collection("orders").document(documentId).getDocument { (document, error) in
                if let document = document, document.exists {
@@ -212,7 +219,7 @@ class cartVC: UIViewController,UITableViewDelegate,UITableViewDataSource,ItemCel
         }
     func updateDatabaseAfterItemDeletion(_ removedItem: CartItem) {
             let db = Firestore.firestore()
-            let documentId = "sairam"
+        let documentId = self.username
             db.collection("orders").document(documentId).getDocument { (document, error) in
                 if let document = document, document.exists {
                     var cartItemsData = document.data()?["cartItems"] as? [[String: Any]] ?? []
