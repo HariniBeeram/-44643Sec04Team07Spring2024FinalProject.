@@ -7,10 +7,29 @@
 
 import UIKit
 import SDWebImage
+import Lottie
 class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource{
+
+    
     private let reuseIdentifier = "foodItemCell"
     private let insetSize = CGFloat(1.5)
 
+    @IBOutlet weak var launchLAV: LottieAnimationView! {
+        didSet{
+            launchLAV.animation = LottieAnimation.named("cheflogo")
+                    
+            launchLAV.loopMode = .playOnce
+            launchLAV.alpha = 1.0
+            launchLAV.play { [weak self] _ in
+                                    UIViewPropertyAnimator.runningPropertyAnimator(
+                                        withDuration: 1.0,
+                                        delay: 0.0,
+                                        options: [.curveEaseInOut]) {
+                                            self?.launchLAV.alpha = 0.0
+                        }
+                    }
+                }
+            }
     var menuItems: [FoodItem] = []
 
     let shared = DataManager.shared

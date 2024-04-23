@@ -8,8 +8,6 @@
 import UIKit
 import Firebase
 class cartVC: UIViewController,UITableViewDelegate,UITableViewDataSource,ItemCellDelegate{
-    
-    let timeOptions = ["7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM"]
     let username = AppDelegate.username
     
     @IBOutlet weak var messageLBL: UILabel!{
@@ -65,8 +63,10 @@ class cartVC: UIViewController,UITableViewDelegate,UITableViewDataSource,ItemCel
         }
         
         func addToPickupOrders(cartItems: [[String: Any]]) {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
             let db = Firestore.firestore()
-            let orderedDate = Timestamp(date: Date())
+            let orderedDate = dateFormatter.string(from: Date())
             let pickupOrderData: [String: Any] = [
                 "username": self.username,
                 "orderedDate": orderedDate,

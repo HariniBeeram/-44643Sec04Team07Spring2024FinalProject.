@@ -22,6 +22,7 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
     let reservingColor = UIColor.green
     let originalColor = UIColor.brown
     var tableNodes:[String] = ["Object_20","Object_124","Object_98","Object_194","Object_150","Object_72","Object_592","Object_615","Object_46"]
+    
     var dineInSelected:Bool = false
     var cartItems: [CartItem] = []
     
@@ -38,7 +39,9 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
             {
                 if let currentColor = tableNode.geometry?.firstMaterial?.diffuse.contents as? UIColor {
                     if currentColor.isEqual(reservingColor) {
-                        reservedTables.append(nodeName);
+                        guard let index = tableNodes.firstIndex(where: { $0 == nodeName }) else { return}
+                        let tableName = "Table_\(index+1)"
+                        reservedTables.append(tableName);
                         
                     }
                 }
@@ -101,7 +104,9 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
                     if let tables = document.data()["reservedTables"] as? [String]{
                         self.userTables = tables
                         for nodeName in self.userTables {
-                            if let tableNode = scene.rootNode.childNode(withName: nodeName, recursively: true) {
+                            let index = Int(nodeName.replacingOccurrences(of: "Table_", with: ""))
+                            if let tableNode = scene.rootNode.childNode(withName: self.tableNodes[index!-1], recursively: true) {
+                                
                                 tableNode.geometry?.firstMaterial?.diffuse.contents = self.reservingColor
                             }
                         }
@@ -111,7 +116,9 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
                     if let tables = document.data()["reservedTables"] as? [String],let time = document.data()["time"] as? String, time == self.selectedTime, let date = document.data()["date"] as? String, date == self.dateFormatter.string(from: self.selectedDate) {
                         self.reserved = tables
                         for nodeName in self.reserved {
-                            if let tableNode = scene.rootNode.childNode(withName: nodeName, recursively: true) {
+                            let index = Int(nodeName.replacingOccurrences(of: "Table_", with: ""))
+                            
+                            if let tableNode = scene.rootNode.childNode(withName:self.tableNodes[index!-1] , recursively: true) {
                                 tableNode.geometry?.firstMaterial?.diffuse.contents = self.reservedColor
                             }
                         }

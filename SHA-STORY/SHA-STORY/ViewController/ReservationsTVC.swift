@@ -9,8 +9,6 @@ class ReservationsTVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Load reservations data
         fetchReservations()
     }
     
@@ -26,8 +24,6 @@ class ReservationsTVC: UITableViewController {
                 print("No reservations found")
                 return
             }
-            
-            // Process the documents here
             for document in documents {
                 print(document.data())
                 if let username = document.data()["username"] as? String, username == self.username ,
@@ -39,16 +35,11 @@ class ReservationsTVC: UITableViewController {
                     }
                 }
             }
-            
-            // Reload the table view after fetching data
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
         }
     }
-
-    // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

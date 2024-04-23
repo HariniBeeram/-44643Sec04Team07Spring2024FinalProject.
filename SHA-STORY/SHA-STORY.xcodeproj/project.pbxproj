@@ -70,6 +70,8 @@
 		32E7A2602BD36DF600F0B68B /* ReservationsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E7A25F2BD36DF600F0B68B /* ReservationsTVC.swift */; };
 		32E7A2622BD3768100F0B68B /* ResetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E7A2612BD3768100F0B68B /* ResetPasswordVC.swift */; };
 		32E7A2642BD376EA00F0B68B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E7A2632BD376EA00F0B68B /* File.swift */; };
+		32E7A2662BD7E62900F0B68B /* accountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E7A2652BD7E62900F0B68B /* accountCell.swift */; };
+		32E7A2682BD80EDA00F0B68B /* orderDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E7A2672BD80EDA00F0B68B /* orderDetailTVC.swift */; };
 		C7045F302B884B8B0033D7C7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C7045F2F2B884B8B0033D7C7 /* Lottie */; };
 /* End PBXBuildFile section */
 
@@ -127,6 +129,8 @@
 		32E7A25F2BD36DF600F0B68B /* ReservationsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsTVC.swift; sourceTree = "<group>"; };
 		32E7A2612BD3768100F0B68B /* ResetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVC.swift; sourceTree = "<group>"; };
 		32E7A2632BD376EA00F0B68B /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		32E7A2652BD7E62900F0B68B /* accountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accountCell.swift; sourceTree = "<group>"; };
+		32E7A2672BD80EDA00F0B68B /* orderDetailTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderDetailTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +267,8 @@
 				32E7A25B2BD3653A00F0B68B /* AccountVC.swift */,
 				32E7A25D2BD36DD900F0B68B /* OrderHistoryTVC.swift */,
 				32E7A25F2BD36DF600F0B68B /* ReservationsTVC.swift */,
+				32E7A2652BD7E62900F0B68B /* accountCell.swift */,
+				32E7A2672BD80EDA00F0B68B /* orderDetailTVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -464,8 +470,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2221F7ED2B83F42F0056A1E2 /* SHA_STORY.swift in Sources */,
+				32E7A2662BD7E62900F0B68B /* accountCell.swift in Sources */,
 				2221F7E92B83F42F0056A1E2 /* AppDelegate.swift in Sources */,
 				328D84152BCB8454003E1B87 /* HomeVC.swift in Sources */,
+				32E7A2682BD80EDA00F0B68B /* orderDetailTVC.swift in Sources */,
 				325DC76B2BD0F33500D09805 /* headerCell.swift in Sources */,
 				32E7A25A2BD20BE000F0B68B /* itemCellTableViewCell.swift in Sources */,
 				32E7A2622BD3768100F0B68B /* ResetPasswordVC.swift in Sources */,
