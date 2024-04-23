@@ -252,7 +252,7 @@ class TableBookingVC: UIViewController,UIGestureRecognizerDelegate {
             // Iterate through each document
             for document in documents {
                 let docID = document.documentID
-                if let username = document.data()["username"] as? String, username == self.username {
+                if let username = document.data()["username"] as? String, username == self.username , let time = document.data()["time"] as? String, time == self.selectedTime, let date = document.data()["date"] as? String, date == self.dateFormatter.string(from: self.selectedDate){
                     userHasReservation = true
                     existingDocumentID = docID
                     break

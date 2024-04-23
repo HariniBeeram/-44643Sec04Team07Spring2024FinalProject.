@@ -257,6 +257,36 @@
                   endingLineNumber = "212"
                   offsetFromSymbolStart = "2916">
                </Location>
+               <Location
+                  uuid = "8F3F99B9-8DD4-441F-80A5-315C90BD7AC3 - 2c22d4b2bdaec654"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SHA_STORY.TableBookingVC.handleTableSelection(date: Swift.String, time: Swift.String, tables: Swift.Array&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sai/Desktop/ios/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/TableBookingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "273"
+                  endingLineNumber = "273"
+                  offsetFromSymbolStart = "2916">
+               </Location>
+               <Location
+                  uuid = "8F3F99B9-8DD4-441F-80A5-315C90BD7AC3 - 2c22d4b2bdaec654"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SHA_STORY.TableBookingVC.handleTableSelection(date: Swift.String, time: Swift.String, tables: Swift.Array&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "SHA-STORY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sai/Desktop/ios/44643Sec04Team07Spring2024FinalProject./SHA-STORY/SHA-STORY/ViewController/TableBookingVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "273"
+                  endingLineNumber = "273"
+                  offsetFromSymbolStart = "4184">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
